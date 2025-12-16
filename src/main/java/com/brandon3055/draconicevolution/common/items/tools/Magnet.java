@@ -152,25 +152,19 @@ public class Magnet extends ItemDE implements IBauble, IConfigurableItem {
             int y = (int) Math.floor(item.posY);
             int z = (int) Math.floor(item.posZ);
 
-            Block block = world.getBlock(x, y, z);
-            String blockName = Item.itemRegistry.getNameForObject(Item.getItemFromBlock(block));
-            int meta = world.getBlockMetadata(x, y, z);
-            if (ConfigHandler.itemDislocatorBlockBlacklistMap.containsKey(blockName)
-                    && (ConfigHandler.itemDislocatorBlockBlacklistMap.get(blockName) == -1
-                            || ConfigHandler.itemDislocatorBlockBlacklistMap.get(blockName) == meta)) {
-                continue;
+            boolean skip = false;
+            for (int i = 0; i < 2; i++) {
+                Block block = world.getBlock(x, y - i, z);
+                String blockName = Item.itemRegistry.getNameForObject(Item.getItemFromBlock(block));
+                int meta = world.getBlockMetadata(x, y - i, z);
+                if (ConfigHandler.itemDislocatorBlockBlacklistMap.containsKey(blockName)
+                        && (ConfigHandler.itemDislocatorBlockBlacklistMap.get(blockName) == -1
+                                || ConfigHandler.itemDislocatorBlockBlacklistMap.get(blockName) == meta)) {
+                    skip = true;
+                }
             }
 
-            y--;
-
-            block = world.getBlock(x, y, z);
-            blockName = Item.itemRegistry.getNameForObject(Item.getItemFromBlock(block));
-            meta = world.getBlockMetadata(x, y, z);
-            if (ConfigHandler.itemDislocatorBlockBlacklistMap.containsKey(blockName)
-                    && (ConfigHandler.itemDislocatorBlockBlacklistMap.get(blockName) == -1
-                            || ConfigHandler.itemDislocatorBlockBlacklistMap.get(blockName) == meta)) {
-                continue;
-            }
+            if (skip) continue;
 
             if (!skipPlayerCheck) {
                 EntityPlayer closestPlayer = world.getClosestPlayerToEntity(item, range);
