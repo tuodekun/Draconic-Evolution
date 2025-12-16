@@ -428,8 +428,14 @@ public class ConfigHandler {
             itemDislocatorBlacklistMap.clear();
             for (String s : itemDislocatorBlacklist) {
                 if (s.contains("|")) {
-                    itemDislocatorBlacklistMap
-                            .put(s.substring(0, s.indexOf("|")), Integer.parseInt(s.substring(s.indexOf("|") + 1)));
+                    try {
+                        itemDislocatorBlacklistMap
+                                .put(s.substring(0, s.indexOf("|")), Integer.parseInt(s.substring(s.indexOf("|") + 1)));
+                    } catch (NumberFormatException e) {
+                        LogHelper.error("Error while loading dislocator blacklist.");
+                        LogHelper.error("Could not parse meta (damage) for \"" + s + "\"");
+                        e.printStackTrace();
+                    }
                 } else {
                     itemDislocatorBlacklistMap.put(s, -1);
                 }
@@ -438,8 +444,14 @@ public class ConfigHandler {
             itemDislocatorBlockBlacklistMap.clear();
             for (String s : itemDislocatorBlockBlacklist) {
                 if (s.contains("|")) {
-                    itemDislocatorBlockBlacklistMap
-                            .put(s.substring(0, s.indexOf("|")), Integer.parseInt(s.substring(s.indexOf("|") + 1)));
+                    try {
+                        itemDislocatorBlockBlacklistMap
+                                .put(s.substring(0, s.indexOf("|")), Integer.parseInt(s.substring(s.indexOf("|") + 1)));
+                    } catch (NumberFormatException e) {
+                        LogHelper.error("Error while loading dislocator block blacklist.");
+                        LogHelper.error("Could not parse meta (damage) for \"" + s + "\"");
+                        e.printStackTrace();
+                    }
                 } else {
                     itemDislocatorBlockBlacklistMap.put(s, -1);
                 }
