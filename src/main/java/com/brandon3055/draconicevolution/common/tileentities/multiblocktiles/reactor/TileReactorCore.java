@@ -28,10 +28,9 @@ import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.StatCollector;
 import net.minecraftforge.common.util.ForgeDirection;
 
-import com.brandon3055.brandonscore.BrandonsCore;
-import com.brandon3055.brandonscore.common.handlers.ProcessHandler;
-import com.brandon3055.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.DraconicEvolution;
+import com.brandon3055.draconicevolution.brandonscore.common.handlers.ProcessHandler;
+import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.client.ReactorSound;
 import com.brandon3055.draconicevolution.client.gui.GuiHandler;
 import com.brandon3055.draconicevolution.client.render.particle.Particles;
@@ -145,7 +144,7 @@ public class TileReactorCore extends TileObjectSync implements IInventory {
     }
 
     private void checkPlayerCollision() {
-        EntityPlayer player = BrandonsCore.proxy.getClientPlayer();
+        EntityPlayer player = DraconicEvolution.proxy.getClientPlayer();
         double distance = Utills
                 .getDistanceAtoB(player.posX, player.posY, player.posZ, xCoord + 0.5, yCoord + 0.5, zCoord + 0.5);
         double coreRadiusWithMargin = getCoreRadius() + 0.5;
@@ -650,6 +649,7 @@ public class TileReactorCore extends TileObjectSync implements IInventory {
         maxFieldCharge = compound.getDouble("maxFieldCharge");
     }
 
+    // todo review wtf
     public Object[] callMethod(String methodName, Object... args) {
         if (args.length > 0) {
             throw new IllegalArgumentException("This method does not accept arguments");

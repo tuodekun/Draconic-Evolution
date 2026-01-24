@@ -4,6 +4,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import com.brandon3055.draconicevolution.brandonscore.common.utills.DataUtills;
+import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
+import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
@@ -19,10 +22,6 @@ import net.minecraftforge.common.ForgeHooks;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 
-import com.brandon3055.brandonscore.BrandonsCore;
-import com.brandon3055.brandonscore.common.utills.DataUtills;
-import com.brandon3055.brandonscore.common.utills.InfoHelper;
-import com.brandon3055.brandonscore.common.utills.ItemNBTHelper;
 import com.brandon3055.draconicevolution.DraconicEvolution;
 import com.brandon3055.draconicevolution.client.keybinding.KeyBindings;
 import com.brandon3055.draconicevolution.common.handler.ConfigHandler;
@@ -250,9 +249,9 @@ public class ToolBase extends RFItemBase {
 
     @Override
     public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player) {
-        if (!world.isRemote && !BrandonsCore.proxy.isDedicatedServer()) {
+        if (!world.isRemote && !DraconicEvolution.proxy.isDedicatedServer()) {
             handleModeChange(stack, player, InfoHelper.isShiftKeyDown(), InfoHelper.isCtrlKeyDown());
-        } else if (world.isRemote && BrandonsCore.proxy.getMCServer() == null) {
+        } else if (world.isRemote && DraconicEvolution.proxy.getMCServer() == null) {
             handleModeChange(stack, player, InfoHelper.isShiftKeyDown(), InfoHelper.isCtrlKeyDown());
             DraconicEvolution.network
                     .sendToServer(new ToolModePacket(InfoHelper.isShiftKeyDown(), InfoHelper.isCtrlKeyDown()));

@@ -14,8 +14,8 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 
-import com.brandon3055.brandonscore.common.utills.Teleporter;
 import com.brandon3055.draconicevolution.DraconicEvolution;
+import com.brandon3055.draconicevolution.brandonscore.common.utills.Teleporter;
 import com.brandon3055.draconicevolution.common.ModBlocks;
 import com.brandon3055.draconicevolution.common.items.tools.TeleporterMKI;
 import com.brandon3055.draconicevolution.common.lib.References;

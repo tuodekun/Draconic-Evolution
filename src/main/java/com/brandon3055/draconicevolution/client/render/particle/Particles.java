@@ -11,7 +11,7 @@ import net.minecraftforge.client.model.IModelCustom;
 
 import org.lwjgl.opengl.GL11;
 
-import com.brandon3055.brandonscore.common.utills.Utills;
+import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.client.handler.ResourceHandler;
 import com.brandon3055.draconicevolution.common.entity.EntityDragonProjectile;
 import com.brandon3055.draconicevolution.common.lib.References;

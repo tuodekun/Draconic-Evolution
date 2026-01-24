@@ -20,8 +20,8 @@ import net.minecraftforge.client.model.IModelCustom;
 
 import org.lwjgl.opengl.GL11;
 
-import com.brandon3055.brandonscore.common.utills.DataUtills.XZPair;
 import com.brandon3055.draconicevolution.DraconicEvolution;
+import com.brandon3055.draconicevolution.brandonscore.common.utills.DataUtills;
 import com.brandon3055.draconicevolution.common.ModItems;
 import com.brandon3055.draconicevolution.common.handler.ConfigHandler;
 import com.brandon3055.draconicevolution.common.handler.ContributorHandler;
@@ -45,7 +45,7 @@ import cpw.mods.fml.relauncher.SideOnly;
  */
 public class ClientEventHandler {
 
-    public static Map<EntityPlayer, XZPair<Float, Integer>> playerShieldStatus = new HashMap<EntityPlayer, XZPair<Float, Integer>>();
+    public static Map<EntityPlayer, DataUtills.XZPair<Float, Integer>> playerShieldStatus = new HashMap<>();
 
     public static int elapsedTicks;
     private static float previousFOB = 0f;
@@ -72,9 +72,9 @@ public class ClientEventHandler {
         if (event.phase != TickEvent.Phase.START || event.type != TickEvent.Type.CLIENT || event.side != Side.CLIENT)
             return;
 
-        for (Iterator<Map.Entry<EntityPlayer, XZPair<Float, Integer>>> i = playerShieldStatus.entrySet().iterator(); i
-                .hasNext();) {
-            Map.Entry<EntityPlayer, XZPair<Float, Integer>> entry = i.next();
+        for (Iterator<Map.Entry<EntityPlayer, DataUtills.XZPair<Float, Integer>>> i = playerShieldStatus.entrySet()
+                .iterator(); i.hasNext();) {
+            Map.Entry<EntityPlayer, DataUtills.XZPair<Float, Integer>> entry = i.next();
             if (elapsedTicks - entry.getValue().getValue() > 5) i.remove();
         }
 

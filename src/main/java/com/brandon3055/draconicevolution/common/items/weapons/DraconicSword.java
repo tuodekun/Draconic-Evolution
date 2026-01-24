@@ -3,6 +3,8 @@ package com.brandon3055.draconicevolution.common.items.weapons;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
+import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
@@ -20,10 +22,6 @@ import net.minecraftforge.client.IItemRenderer;
 
 import org.lwjgl.opengl.GL11;
 
-import com.brandon3055.brandonscore.BrandonsCore;
-import com.brandon3055.brandonscore.common.utills.InfoHelper;
-import com.brandon3055.brandonscore.common.utills.ItemNBTHelper;
-import com.brandon3055.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.DraconicEvolution;
 import com.brandon3055.draconicevolution.client.render.IRenderTweak;
 import com.brandon3055.draconicevolution.common.ModItems;
@@ -44,6 +42,8 @@ import com.google.common.collect.Multimap;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
 
 public class DraconicSword extends ItemSword
         implements IEnergyContainerWeaponItem, IInventoryTool, IRenderTweak, IUpgradableItem, IHudDisplayItem {
@@ -305,7 +305,7 @@ public class DraconicSword extends ItemSword
                 InfoHelper.ITC() + StatCollector.translateToLocal("gui.de.RFCapacity.txt")
                         + ": "
                         + InfoHelper.HITC()
-                        + Utills.formatNumber(getMaxEnergyStored(stack)));
+                        + formatNumber(getMaxEnergyStored(stack)));
         strings.add(
                 InfoHelper.ITC() + StatCollector.translateToLocal("info.de.attackDamage.txt")
                         + ": "
@@ -317,9 +317,9 @@ public class DraconicSword extends ItemSword
                         + StatCollector.translateToLocal("gui.de.AttackAOE.txt")
                         + ": "
                         + InfoHelper.HITC()
-                        + attackaoe
+                        + formatNumber(attackaoe)
                         + "x"
-                        + attackaoe);
+                        + formatNumber(attackaoe));
 
         return strings;
     }
@@ -335,9 +335,9 @@ public class DraconicSword extends ItemSword
 
     @Override
     public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player) {
-        if (!world.isRemote && !BrandonsCore.proxy.isDedicatedServer()) {
+        if (!world.isRemote && !DraconicEvolution.proxy.isDedicatedServer()) {
             ToolBase.handleModeChange(stack, player, InfoHelper.isShiftKeyDown(), InfoHelper.isCtrlKeyDown());
-        } else if (world.isRemote && BrandonsCore.proxy.getMCServer() == null) {
+        } else if (world.isRemote && DraconicEvolution.proxy.getMCServer() == null) {
             ToolBase.handleModeChange(stack, player, InfoHelper.isShiftKeyDown(), InfoHelper.isCtrlKeyDown());
             DraconicEvolution.network
                     .sendToServer(new ToolModePacket(InfoHelper.isShiftKeyDown(), InfoHelper.isCtrlKeyDown()));

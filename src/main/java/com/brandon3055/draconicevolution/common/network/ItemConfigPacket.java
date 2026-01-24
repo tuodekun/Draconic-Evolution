@@ -2,12 +2,12 @@ package com.brandon3055.draconicevolution.common.network;
 
 import java.util.List;
 
+import com.brandon3055.draconicevolution.brandonscore.common.lib.References;
+import com.brandon3055.draconicevolution.brandonscore.common.utills.DataUtills;
+import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 
-import com.brandon3055.brandonscore.common.lib.References;
-import com.brandon3055.brandonscore.common.utills.DataUtills;
-import com.brandon3055.brandonscore.common.utills.ItemNBTHelper;
 import com.brandon3055.draconicevolution.common.utills.IConfigurableItem;
 import com.brandon3055.draconicevolution.common.utills.ItemConfigField;
 

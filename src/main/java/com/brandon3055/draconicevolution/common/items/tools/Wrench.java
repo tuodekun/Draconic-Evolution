@@ -3,6 +3,7 @@ package com.brandon3055.draconicevolution.common.items.tools;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -13,7 +14,6 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
-import com.brandon3055.brandonscore.common.utills.ItemNBTHelper;
 import com.brandon3055.draconicevolution.DraconicEvolution;
 import com.brandon3055.draconicevolution.common.ModItems;
 import com.brandon3055.draconicevolution.common.items.ItemDE;

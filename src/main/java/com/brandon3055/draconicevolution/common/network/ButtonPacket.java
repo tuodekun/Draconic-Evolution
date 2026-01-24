@@ -1,9 +1,9 @@
 package com.brandon3055.draconicevolution.common.network;
 
+import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
 import net.minecraft.inventory.Container;
 import net.minecraft.item.ItemStack;
 
-import com.brandon3055.brandonscore.common.utills.ItemNBTHelper;
 import com.brandon3055.draconicevolution.DraconicEvolution;
 import com.brandon3055.draconicevolution.client.gui.GuiHandler;
 import com.brandon3055.draconicevolution.common.container.ContainerDissEnchanter;

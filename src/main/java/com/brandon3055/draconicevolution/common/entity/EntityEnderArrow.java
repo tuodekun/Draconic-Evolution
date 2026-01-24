@@ -2,6 +2,7 @@ package com.brandon3055.draconicevolution.common.entity;
 
 import java.util.List;
 
+import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
@@ -18,7 +19,6 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.EnderTeleportEvent;
 
-import com.brandon3055.brandonscore.common.utills.Utills;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

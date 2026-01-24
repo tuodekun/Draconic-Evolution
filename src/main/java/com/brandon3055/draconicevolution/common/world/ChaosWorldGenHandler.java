@@ -7,10 +7,10 @@ import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 
-import com.brandon3055.brandonscore.common.handlers.IProcess;
-import com.brandon3055.brandonscore.common.utills.DataUtills;
-import com.brandon3055.brandonscore.common.utills.SimplexNoise;
-import com.brandon3055.brandonscore.common.utills.Utills;
+import com.brandon3055.draconicevolution.brandonscore.common.handlers.IProcess;
+import com.brandon3055.draconicevolution.brandonscore.common.utills.DataUtills;
+import com.brandon3055.draconicevolution.brandonscore.common.utills.SimplexNoise;
+import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.common.ModBlocks;
 import com.brandon3055.draconicevolution.common.entity.EntityChaosCrystal;
 import com.brandon3055.draconicevolution.common.entity.EntityChaosGuardian;

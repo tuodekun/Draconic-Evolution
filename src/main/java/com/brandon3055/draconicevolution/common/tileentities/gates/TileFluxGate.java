@@ -3,10 +3,11 @@ package com.brandon3055.draconicevolution.common.tileentities.gates;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.util.ForgeDirection;
 
-import com.brandon3055.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.common.lib.References;
 
 import cofh.api.energy.IEnergyReceiver;
+
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
 
 /**
  * Created by Brandon on 29/6/2015.
@@ -84,7 +85,7 @@ public class TileFluxGate extends TileGate implements IEnergyReceiver {
 
     @Override
     public String getFlowSetting(int selector) {
-        return selector == 0 ? Utills.addCommas(flowRSLow) + " RF/t" : Utills.addCommas(flowRSHigh) + " RF/t";
+        return selector == 0 ? formatNumber(flowRSLow) + " RF/t" : formatNumber(flowRSHigh) + " RF/t";
     }
 
     @Override

@@ -2,7 +2,6 @@ package com.brandon3055.draconicevolution.client;
 
 import static com.brandon3055.draconicevolution.integration.nei.IMCForNEI.IMCSender;
 
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.ISound;
 import net.minecraft.client.particle.EntityFX;
 import net.minecraft.item.Item;
@@ -388,10 +387,6 @@ public class ClientProxy extends CommonProxy {
             beam.update();
         }
         return beam;
-    }
-
-    public boolean isOp(String paramString) {
-        return Minecraft.getMinecraft().theWorld.getWorldInfo().getGameType().isCreative();
     }
 
     @Override

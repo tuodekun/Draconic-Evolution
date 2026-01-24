@@ -1,5 +1,7 @@
 package com.brandon3055.draconicevolution.common.tileentities.multiblocktiles;
 
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,8 +15,7 @@ import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.StatCollector;
 import net.minecraftforge.common.util.ForgeDirection;
 
-import com.brandon3055.brandonscore.common.utills.InfoHelper;
-import com.brandon3055.brandonscore.common.utills.Utills;
+import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
 import com.brandon3055.draconicevolution.common.ModBlocks;
 import com.brandon3055.draconicevolution.common.blocks.multiblock.InvisibleMultiblock;
 import com.brandon3055.draconicevolution.common.blocks.multiblock.MultiblockHelper.TileLocation;
@@ -500,11 +501,11 @@ public class TileEnergyStorageCore extends TileObjectSync {
         information.add(
                 StatCollector.translateToLocal("info.de.charge.txt") + ": "
                         + InfoHelper.ITC()
-                        + Utills.formatNumber(energy)
+                        + formatNumber(energy)
                         + " / "
-                        + Utills.formatNumber(capacity)
+                        + formatNumber(capacity)
                         + " ["
-                        + Utills.addCommas(energy)
+                        + formatNumber(energy)
                         + " RF]");
         return information;
     }

@@ -19,8 +19,8 @@ import net.minecraftforge.client.event.RenderPlayerEvent;
 import org.apache.commons.io.IOUtils;
 import org.lwjgl.opengl.GL11;
 
-import com.brandon3055.brandonscore.common.handlers.FileHandler;
 import com.brandon3055.draconicevolution.DraconicEvolution;
+import com.brandon3055.draconicevolution.brandonscore.common.handlers.FileHandler;
 import com.brandon3055.draconicevolution.client.handler.ResourceHandler;
 import com.brandon3055.draconicevolution.client.model.special.ModelContributorWings;
 import com.brandon3055.draconicevolution.common.network.ContributorPacket;

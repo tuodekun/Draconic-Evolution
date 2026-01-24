@@ -2,6 +2,7 @@ package com.brandon3055.draconicevolution.common.items;
 
 import java.util.List;
 
+import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
@@ -9,7 +10,6 @@ import net.minecraft.tileentity.TileEntityMobSpawner;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
-import com.brandon3055.brandonscore.common.utills.InfoHelper;
 import com.brandon3055.draconicevolution.DraconicEvolution;
 import com.brandon3055.draconicevolution.common.ModBlocks;
 import com.brandon3055.draconicevolution.common.ModItems;

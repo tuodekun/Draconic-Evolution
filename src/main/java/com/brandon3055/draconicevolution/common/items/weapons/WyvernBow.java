@@ -3,6 +3,8 @@ package com.brandon3055.draconicevolution.common.items.weapons;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
+import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
@@ -17,10 +19,6 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
-import com.brandon3055.brandonscore.BrandonsCore;
-import com.brandon3055.brandonscore.common.utills.InfoHelper;
-import com.brandon3055.brandonscore.common.utills.ItemNBTHelper;
-import com.brandon3055.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.DraconicEvolution;
 import com.brandon3055.draconicevolution.common.ModItems;
 import com.brandon3055.draconicevolution.common.entity.EntityPersistentItem;
@@ -37,6 +35,8 @@ import com.brandon3055.draconicevolution.common.utills.ItemConfigField;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
 
 public class WyvernBow extends ItemBow
         implements IInventoryTool, IUpgradableItem, IEnergyContainerWeaponItem, IHudDisplayItem {
@@ -299,7 +299,7 @@ public class WyvernBow extends ItemBow
                 InfoHelper.ITC() + StatCollector.translateToLocal("gui.de.RFCapacity.txt")
                         + ": "
                         + InfoHelper.HITC()
-                        + Utills.formatNumber(getMaxEnergyStored(stack)));
+                        + formatNumber(getMaxEnergyStored(stack)));
         list.add(
                 InfoHelper.ITC() + StatCollector.translateToLocal("gui.de.max.txt")
                         + " "
@@ -307,16 +307,16 @@ public class WyvernBow extends ItemBow
                         + ": "
                         + InfoHelper.HITC()
                         + "+"
-                        + EnumUpgrade.ARROW_SPEED.getUpgradePoints(stack) * 100
+                        + formatNumber(EnumUpgrade.ARROW_SPEED.getUpgradePoints(stack) * 100)
                         + "%");
         list.add(
                 InfoHelper.ITC() + StatCollector.translateToLocal(
-                        "gui.de.ArrowDamage.txt") + ": " + InfoHelper.HITC() + properties.arrowDamage + "");
+                        "gui.de.ArrowDamage.txt") + ": " + InfoHelper.HITC() + properties.arrowDamage);
         list.add(
                 InfoHelper.ITC() + StatCollector.translateToLocal("gui.de.DrawSpeed.txt")
                         + ": "
                         + InfoHelper.HITC()
-                        + properties.getDrawTicks() / 20D
+                        + formatNumber(properties.getDrawTicks() / 20D)
                         + "s");
 
         return list;
@@ -360,9 +360,9 @@ public class WyvernBow extends ItemBow
     public List<String> getDisplayData(ItemStack stack) {
         List<String> list = new ArrayList<String>();
 
-        if (BrandonsCore.proxy.getClientPlayer() != null
-                && BrandonsCore.proxy.getClientPlayer().getItemInUse() != null) {
-            EntityPlayer player = BrandonsCore.proxy.getClientPlayer();
+        if (DraconicEvolution.proxy.getClientPlayer() != null
+                && DraconicEvolution.proxy.getClientPlayer().getItemInUse() != null) {
+            EntityPlayer player = DraconicEvolution.proxy.getClientPlayer();
             BowHandler.BowProperties properties = new BowHandler.BowProperties(stack, player);
             int power = (int) Math
                     .min(((float) player.getItemInUseDuration() / (float) properties.getDrawTicks() * 100F), 100F);
@@ -386,19 +386,19 @@ public class WyvernBow extends ItemBow
                     InfoHelper.ITC() + StatCollector.translateToLocal("info.de.charge.txt")
                             + ": "
                             + InfoHelper.HITC()
-                            + Utills.formatNumber(getEnergyStored(stack))
+                            + formatNumber(getEnergyStored(stack))
                             + " / "
-                            + Utills.formatNumber(getMaxEnergyStored(stack)));
+                            + formatNumber(getMaxEnergyStored(stack)));
 
-            if (BrandonsCore.proxy.getClientPlayer() != null) {
+            if (DraconicEvolution.proxy.getClientPlayer() != null) {
                 BowHandler.BowProperties properties = new BowHandler.BowProperties(
                         stack,
-                        BrandonsCore.proxy.getClientPlayer());
+                        DraconicEvolution.proxy.getClientPlayer());
                 list.add(
                         InfoHelper.ITC() + StatCollector.translateToLocal("gui.de.rfPerShot.txt")
                                 + ": "
                                 + InfoHelper.HITC()
-                                + Utills.addCommas(properties.calculateEnergyCost()));
+                                + formatNumber(properties.calculateEnergyCost()));
                 if (!properties.canFire() && properties.cantFireMessage != null)
                     list.add(EnumChatFormatting.DARK_RED + StatCollector.translateToLocal(properties.cantFireMessage));
             }

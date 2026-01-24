@@ -2,6 +2,7 @@ package com.brandon3055.draconicevolution.common.items;
 
 import java.util.List;
 
+import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityList;
@@ -15,7 +16,6 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
-import com.brandon3055.brandonscore.common.utills.ItemNBTHelper;
 import com.brandon3055.draconicevolution.common.ModItems;
 import com.brandon3055.draconicevolution.common.lib.Strings;
 import com.brandon3055.draconicevolution.common.utills.LogHelper;
@@ -36,10 +36,10 @@ public class MobSoul extends ItemDE {
     @Override
     public void addInformation(ItemStack stack, EntityPlayer par2EntityPlayer, List list, boolean par4) {
         String name = ItemNBTHelper.getString(stack, "Name", "Pig");
-        list.add("" + EnumChatFormatting.WHITE + StatCollector.translateToLocal("info.mobSoul1.txt"));
-        list.add("" + EnumChatFormatting.WHITE + StatCollector.translateToLocal("info.mobSoul2.txt"));
-        list.add("" + EnumChatFormatting.WHITE + StatCollector.translateToLocal("info.mobSoul3.txt"));
-        list.add("" + EnumChatFormatting.DARK_PURPLE + name);
+        list.add(EnumChatFormatting.WHITE + StatCollector.translateToLocal("info.mobSoul1.txt"));
+        list.add(EnumChatFormatting.WHITE + StatCollector.translateToLocal("info.mobSoul2.txt"));
+        list.add(EnumChatFormatting.WHITE + StatCollector.translateToLocal("info.mobSoul3.txt"));
+        list.add(EnumChatFormatting.DARK_PURPLE + name);
     }
 
     @Override

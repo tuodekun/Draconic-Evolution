@@ -10,10 +10,12 @@ import net.minecraft.util.StatCollector;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 
-import com.brandon3055.brandonscore.client.utills.GuiHelper;
-import com.brandon3055.brandonscore.common.utills.Utills;
+import com.brandon3055.draconicevolution.brandonscore.client.utills.GuiHelper;
+import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.client.handler.ResourceHandler;
 import com.brandon3055.draconicevolution.common.tileentities.gates.TileGate;
+
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
 
 /**
  * Created by Brandon on 30/6/2015.
@@ -87,7 +89,7 @@ public class GUIFlowGate extends GuiScreen {
                 0x00FF00);
 
         String flow = StatCollector.translateToLocal("gui.de.flowGateCurrentFlow.name") + ": "
-                + Utills.addCommas(tile.getActualFlow());
+                + formatNumber(tile.getActualFlow());
         fontRendererObj.drawString(flow, guiCrt - (fontRendererObj.getStringWidth(flow) / 2), guiTop + 76, 0x2c2c2c);
 
         if (!tile.flowOverridden) {

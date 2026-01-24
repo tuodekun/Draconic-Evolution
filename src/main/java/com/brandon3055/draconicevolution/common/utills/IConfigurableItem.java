@@ -2,11 +2,10 @@ package com.brandon3055.draconicevolution.common.utills;
 
 import java.util.List;
 
+import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
-
-import com.brandon3055.brandonscore.common.utills.ItemNBTHelper;
 
 /**
  * Created by Brandon on 29/12/2014.

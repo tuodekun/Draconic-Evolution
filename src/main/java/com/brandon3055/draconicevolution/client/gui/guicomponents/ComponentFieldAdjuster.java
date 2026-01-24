@@ -6,9 +6,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.StatCollector;
 
-import com.brandon3055.brandonscore.client.gui.guicomponents.ComponentBase;
-import com.brandon3055.brandonscore.client.utills.GuiHelper;
-import com.brandon3055.brandonscore.common.utills.DataUtills;
+import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentBase;
+import com.brandon3055.draconicevolution.brandonscore.client.utills.GuiHelper;
+import com.brandon3055.draconicevolution.brandonscore.common.utills.DataUtills;
 import com.brandon3055.draconicevolution.client.gui.componentguis.GUIToolConfig;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.utills.IConfigurableItem;

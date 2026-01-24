@@ -1,5 +1,6 @@
 package com.brandon3055.draconicevolution.common.tileentities.gates;
 
+import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.Fluid;
@@ -7,9 +8,10 @@ import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidTankInfo;
 import net.minecraftforge.fluids.IFluidHandler;
 
-import com.brandon3055.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.utills.LogHelper;
+
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
 
 /**
  * Created by Brandon on 29/6/2015.
@@ -65,7 +67,7 @@ public class TileFluidGate extends TileGate implements IFluidHandler {
 
     @Override
     public String getFlowSetting(int selector) {
-        return selector == 0 ? Utills.addCommas(flowRSLow) + " MB/t" : Utills.addCommas(flowRSHigh) + " MB/t";
+        return selector == 0 ? formatNumber(flowRSLow) + " MB/t" : formatNumber(flowRSHigh) + " MB/t";
     }
 
     @Override

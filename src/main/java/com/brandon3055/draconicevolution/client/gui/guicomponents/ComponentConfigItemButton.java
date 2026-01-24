@@ -9,7 +9,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
 
-import com.brandon3055.brandonscore.client.gui.guicomponents.ComponentBase;
+import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentBase;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.utills.IConfigurableItem;
 import com.brandon3055.draconicevolution.common.utills.IInventoryTool;
@@ -20,8 +20,7 @@ import com.brandon3055.draconicevolution.common.utills.ItemConfigField;
  */
 public class ComponentConfigItemButton extends ComponentBase {
 
-    private static final ResourceLocation texture = new ResourceLocation(
-            References.RESOURCESPREFIX + "textures/gui/Widgets.png");
+    private static final ResourceLocation texture = new ResourceLocation(References.RESOURCESPREFIX + "textures/gui/Widgets.png");
     public int slot;
     private InventoryPlayer inventory;
     public boolean hasValidItem = false;
