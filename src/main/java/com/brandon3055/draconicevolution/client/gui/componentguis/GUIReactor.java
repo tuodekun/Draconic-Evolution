@@ -24,7 +24,7 @@ import com.brandon3055.draconicevolution.common.container.ContainerReactor;
 import com.brandon3055.draconicevolution.common.handler.ConfigHandler;
 import com.brandon3055.draconicevolution.common.tileentities.multiblocktiles.reactor.TileReactorCore;
 import com.brandon3055.draconicevolution.common.tileentities.multiblocktiles.reactor.TileReactorCore.ReactorState;
-import com.brandon3055.draconicevolution.common.utills.Utills;
+import com.brandon3055.draconicevolution.common.utils.Utils;
 
 /**
  * Created by brandon3055 on 30/7/2015.
@@ -184,7 +184,7 @@ public class GUIReactor extends GUIBase {
         } else if (GuiHelper.isInRect(33, 4, 18, 114, mouseX - guiLeft, mouseY - guiTop)) {
             text.add(StatCollector.translateToLocal("gui.de.fieldStrength.txt"));
             if (core.maxFieldCharge > 0) {
-                text.add(Utills.round(core.fieldCharge / core.maxFieldCharge * 100D, 100D) + "%");
+                text.add(Utils.round(core.fieldCharge / core.maxFieldCharge * 100D, 100D) + "%");
             }
             text.add(formatNumber((int) core.fieldCharge) + " / " + formatNumber((int) core.maxFieldCharge));
             drawHoveringText(text, mouseX, mouseY, fontRendererObj);
@@ -192,7 +192,7 @@ public class GUIReactor extends GUIBase {
             text.add(StatCollector.translateToLocal("gui.de.energySaturation.txt"));
             if (core.maxEnergySaturation > 0) {
                 text.add(
-                        Utills.round((double) core.energySaturation / (double) core.maxEnergySaturation * 100D, 100D)
+                        Utils.round((double) core.energySaturation / (double) core.maxEnergySaturation * 100D, 100D)
                                 + "%");
             }
             text.add(formatNumber(core.energySaturation) + " / " + formatNumber(core.maxEnergySaturation));
@@ -201,7 +201,7 @@ public class GUIReactor extends GUIBase {
             text.add(StatCollector.translateToLocal("gui.de.fuelConversion.txt"));
             if (core.reactorFuel + core.convertedFuel > 0) {
                 text.add(
-                        Utills.round(
+                        Utils.round(
                                 ((double) core.convertedFuel + core.conversionUnit)
                                         / ((double) core.convertedFuel + (double) core.reactorFuel)
                                         * 100D,
@@ -209,7 +209,7 @@ public class GUIReactor extends GUIBase {
             }
             text.add(core.convertedFuel + " / " + (core.convertedFuel + core.reactorFuel));
             text.add(
-                    "Full: " + (Utills.round(
+                    "Full: " + (Utils.round(
                             (float) (core.convertedFuel + core.reactorFuel) / ConfigHandler.reactorFuelStorage * 100,
                             1000)) + "%");
             drawHoveringText(text, mouseX, mouseY, fontRendererObj);
@@ -253,10 +253,10 @@ public class GUIReactor extends GUIBase {
     private void drawStatistics() {
         double inputRate = core.fieldDrain / (1D - (core.fieldCharge / core.maxFieldCharge));
         fontRendererObj.drawString(StatCollector.translateToLocal("gui.de.tempLoad.name"), 55, 16, 0x0000FF);
-        fontRendererObj.drawString(Utills.round(core.tempDrainFactor * 100D, 1D) + "%", 60, 2 + 24, 0);
+        fontRendererObj.drawString(Utils.round(core.tempDrainFactor * 100D, 1D) + "%", 60, 2 + 24, 0);
         fontRendererObj.drawString(StatCollector.translateToLocal("gui.de.mass.name"), 55, 16 + 24, 0x0000FF);
         fontRendererObj.drawString(
-                Utills.round((core.reactorFuel + core.convertedFuel) / 1296D, 100) + "m^3",
+                Utils.round((core.reactorFuel + core.convertedFuel) / 1296D, 100) + "m^3",
                 60,
                 2 + 2 * 24,
                 0);

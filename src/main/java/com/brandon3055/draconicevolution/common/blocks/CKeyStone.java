@@ -19,7 +19,7 @@ import com.brandon3055.draconicevolution.common.blocks.itemblocks.CKeyStoneItemB
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.lib.Strings;
 import com.brandon3055.draconicevolution.common.tileentities.TileCKeyStone;
-import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
+import com.brandon3055.draconicevolution.common.utils.ItemNBTHelper;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

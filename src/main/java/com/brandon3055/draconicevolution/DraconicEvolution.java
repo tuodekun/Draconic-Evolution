@@ -7,7 +7,7 @@ import com.brandon3055.draconicevolution.client.creativetab.DETab;
 import com.brandon3055.draconicevolution.common.CommonProxy;
 import com.brandon3055.draconicevolution.common.lib.OreDoublingRegistry;
 import com.brandon3055.draconicevolution.common.lib.References;
-import com.brandon3055.draconicevolution.common.utills.LogHelper;
+import com.brandon3055.draconicevolution.common.utils.LogHelper;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;

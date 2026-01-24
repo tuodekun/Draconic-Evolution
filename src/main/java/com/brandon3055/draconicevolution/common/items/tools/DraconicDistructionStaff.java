@@ -25,11 +25,11 @@ import com.brandon3055.draconicevolution.common.items.tools.baseclasses.ToolHand
 import com.brandon3055.draconicevolution.common.items.weapons.IEnergyContainerWeaponItem;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.lib.Strings;
-import com.brandon3055.draconicevolution.common.utills.IConfigurableItem;
-import com.brandon3055.draconicevolution.common.utills.IInventoryTool;
-import com.brandon3055.draconicevolution.common.utills.IUpgradableItem;
-import com.brandon3055.draconicevolution.common.utills.InfoHelper;
-import com.brandon3055.draconicevolution.common.utills.ItemConfigField;
+import com.brandon3055.draconicevolution.common.utils.IConfigurableItem;
+import com.brandon3055.draconicevolution.common.utils.IInventoryTool;
+import com.brandon3055.draconicevolution.common.utils.IUpgradableItem;
+import com.brandon3055.draconicevolution.common.utils.InfoHelper;
+import com.brandon3055.draconicevolution.common.utils.ItemConfigField;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

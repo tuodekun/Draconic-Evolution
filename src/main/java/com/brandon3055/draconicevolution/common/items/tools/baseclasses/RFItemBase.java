@@ -17,11 +17,11 @@ import net.minecraft.world.World;
 import com.brandon3055.draconicevolution.DraconicEvolution;
 import com.brandon3055.draconicevolution.common.entity.EntityPersistentItem;
 import com.brandon3055.draconicevolution.common.items.ItemDE;
-import com.brandon3055.draconicevolution.common.utills.IConfigurableItem;
-import com.brandon3055.draconicevolution.common.utills.IHudDisplayItem;
-import com.brandon3055.draconicevolution.common.utills.InfoHelper;
-import com.brandon3055.draconicevolution.common.utills.ItemConfigField;
-import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
+import com.brandon3055.draconicevolution.common.utils.IConfigurableItem;
+import com.brandon3055.draconicevolution.common.utils.IHudDisplayItem;
+import com.brandon3055.draconicevolution.common.utils.InfoHelper;
+import com.brandon3055.draconicevolution.common.utils.ItemConfigField;
+import com.brandon3055.draconicevolution.common.utils.ItemNBTHelper;
 
 import cofh.api.energy.IEnergyContainerItem;
 import cpw.mods.fml.relauncher.Side;

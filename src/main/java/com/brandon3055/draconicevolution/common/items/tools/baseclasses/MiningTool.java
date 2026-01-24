@@ -34,11 +34,11 @@ import net.minecraftforge.event.world.BlockEvent;
 
 import com.brandon3055.draconicevolution.common.handler.ConfigHandler;
 import com.brandon3055.draconicevolution.common.lib.References;
-import com.brandon3055.draconicevolution.common.utills.IConfigurableItem;
-import com.brandon3055.draconicevolution.common.utills.IUpgradableItem;
-import com.brandon3055.draconicevolution.common.utills.InfoHelper;
-import com.brandon3055.draconicevolution.common.utills.ItemConfigField;
-import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
+import com.brandon3055.draconicevolution.common.utils.IConfigurableItem;
+import com.brandon3055.draconicevolution.common.utils.IUpgradableItem;
+import com.brandon3055.draconicevolution.common.utils.InfoHelper;
+import com.brandon3055.draconicevolution.common.utils.ItemConfigField;
+import com.brandon3055.draconicevolution.common.utils.ItemNBTHelper;
 
 /**
  * Created by Brandon on 2/01/2015. Modified by bartimaeusnek on 23/05/2018

@@ -25,8 +25,8 @@ import com.brandon3055.draconicevolution.common.handler.ConfigHandler;
 import com.brandon3055.draconicevolution.common.items.tools.TeleporterMKII;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.tileentities.TileTeleporterStand;
-import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
-import com.brandon3055.draconicevolution.common.utills.Utills;
+import com.brandon3055.draconicevolution.common.utils.ItemNBTHelper;
+import com.brandon3055.draconicevolution.common.utils.Utils;
 
 /**
  * Created by Brandon on 25/10/2014.
@@ -136,7 +136,7 @@ public class RenderTileTeleporterStand extends TileEntitySpecialRenderer {
         double pitchAngle = Math.toDegrees(
                 Math.atan2(
                         yDiff,
-                        Utills.getDistanceAtoB(
+                        Utils.getDistanceAtoB(
                                 player.posX,
                                 player.posY,
                                 player.posZ,

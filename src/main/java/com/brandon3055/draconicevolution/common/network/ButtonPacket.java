@@ -11,8 +11,8 @@ import com.brandon3055.draconicevolution.common.container.ContainerWeatherContro
 import com.brandon3055.draconicevolution.common.tileentities.TileDissEnchanter;
 import com.brandon3055.draconicevolution.common.tileentities.TileDraconiumChest;
 import com.brandon3055.draconicevolution.common.tileentities.TileWeatherController;
-import com.brandon3055.draconicevolution.common.utills.IConfigurableItem;
-import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
+import com.brandon3055.draconicevolution.common.utils.IConfigurableItem;
+import com.brandon3055.draconicevolution.common.utils.ItemNBTHelper;
 
 import cpw.mods.fml.common.network.simpleimpl.IMessage;
 import cpw.mods.fml.common.network.simpleimpl.IMessageHandler;

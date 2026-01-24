@@ -17,7 +17,7 @@ import com.brandon3055.draconicevolution.common.blocks.BlockDE;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.tileentities.multiblocktiles.reactor.TileReactorCore;
 import com.brandon3055.draconicevolution.common.tileentities.multiblocktiles.reactor.TileReactorStabilizer;
-import com.brandon3055.draconicevolution.common.utills.Utills;
+import com.brandon3055.draconicevolution.common.utils.Utils;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -86,7 +86,7 @@ public class ReactorStabilizer extends BlockDE implements ITileEntityProvider {
 
     @Override
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack) {
-        ForgeDirection facing = ForgeDirection.getOrientation(Utills.determineOrientation(x, y, z, entity));
+        ForgeDirection facing = ForgeDirection.getOrientation(Utils.determineOrientation(x, y, z, entity));
         TileEntity tile = world.getTileEntity(x, y, z);
         if (tile instanceof TileReactorStabilizer stabilizer) {
             stabilizer.facing = entity.isSneaking() ? facing.getOpposite() : facing;

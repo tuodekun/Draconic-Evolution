@@ -9,9 +9,9 @@ import net.minecraft.nbt.NBTTagList;
 import net.minecraft.util.StringUtils;
 
 import com.brandon3055.draconicevolution.common.container.ContainerAdvTool;
-import com.brandon3055.draconicevolution.common.utills.IInventoryTool;
-import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
-import com.brandon3055.draconicevolution.common.utills.LogHelper;
+import com.brandon3055.draconicevolution.common.utils.IInventoryTool;
+import com.brandon3055.draconicevolution.common.utils.ItemNBTHelper;
+import com.brandon3055.draconicevolution.common.utils.LogHelper;
 
 /**
  * Created by Brandon on 13/01/2015.

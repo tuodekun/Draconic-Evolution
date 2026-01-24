@@ -39,9 +39,9 @@ import com.brandon3055.draconicevolution.common.blocks.multiblock.MultiblockHelp
 import com.brandon3055.draconicevolution.common.handler.ConfigHandler;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.tileentities.TileObjectSync;
-import com.brandon3055.draconicevolution.common.utills.OreDictionaryHelper;
-import com.brandon3055.draconicevolution.common.utills.Utills;
-import com.brandon3055.draconicevolution.common.utills.handlers.ProcessHandler;
+import com.brandon3055.draconicevolution.common.utils.OreDictionaryHelper;
+import com.brandon3055.draconicevolution.common.utils.Utils;
+import com.brandon3055.draconicevolution.common.utils.handlers.ProcessHandler;
 
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
@@ -145,7 +145,7 @@ public class TileReactorCore extends TileObjectSync implements IInventory {
 
     private void checkPlayerCollision() {
         EntityPlayer player = DraconicEvolution.proxy.getClientPlayer();
-        double distance = Utills
+        double distance = Utils
                 .getDistanceAtoB(player.posX, player.posY, player.posZ, xCoord + 0.5, yCoord + 0.5, zCoord + 0.5);
         double coreRadiusWithMargin = getCoreRadius() + 0.5;
         if (distance < coreRadiusWithMargin) {
@@ -657,12 +657,12 @@ public class TileReactorCore extends TileObjectSync implements IInventory {
 
         if (methodName.equals("getReactorInfo")) {
             Map<Object, Object> map = new HashMap<>();
-            map.put("temperature", Utills.round(reactionTemperature, 100));
-            map.put("fieldStrength", Utills.round(fieldCharge, 100));
-            map.put("maxFieldStrength", Utills.round(maxFieldCharge, 100));
+            map.put("temperature", Utils.round(reactionTemperature, 100));
+            map.put("fieldStrength", Utils.round(fieldCharge, 100));
+            map.put("maxFieldStrength", Utils.round(maxFieldCharge, 100));
             map.put("energySaturation", energySaturation);
             map.put("maxEnergySaturation", maxEnergySaturation);
-            map.put("fuelConversion", Utills.round(convertedFuel + conversionUnit, 1000));
+            map.put("fuelConversion", Utils.round(convertedFuel + conversionUnit, 1000));
             map.put("maxFuelConversion", reactorFuel + convertedFuel);
             map.put("generationRate", (int) generationRate);
             map.put("fieldDrainRate", fieldDrain);

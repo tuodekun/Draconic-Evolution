@@ -1,4 +1,4 @@
-package com.brandon3055.draconicevolution.common.utills;
+package com.brandon3055.draconicevolution.common.utils;
 
 import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumberCompact;
 

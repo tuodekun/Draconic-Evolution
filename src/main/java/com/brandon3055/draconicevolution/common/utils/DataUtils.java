@@ -1,11 +1,11 @@
-package com.brandon3055.draconicevolution.common.utills;
+package com.brandon3055.draconicevolution.common.utils;
 
 import java.text.DecimalFormat;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 
-import com.brandon3055.draconicevolution.common.utills.lib.References;
+import com.brandon3055.draconicevolution.common.utils.lib.References;
 
 import cpw.mods.fml.common.network.ByteBufUtils;
 import io.netty.buffer.ByteBuf;
@@ -14,9 +14,9 @@ import io.netty.buffer.ByteBuf;
  * Created by Brandon on 31/12/2014.
  */
 @SuppressWarnings("unused")
-public class DataUtills {
+public class DataUtils {
 
-    public static DataUtills instance = new DataUtills();
+    public static DataUtils instance = new DataUtils();
 
     public void writeObjectToBytes(ByteBuf bytes, int dataType, Object object) {
         switch (dataType) {

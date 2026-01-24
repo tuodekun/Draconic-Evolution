@@ -21,8 +21,8 @@ import com.brandon3055.draconicevolution.common.entity.EntityPersistentItem;
 import com.brandon3055.draconicevolution.common.items.ItemDE;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.lib.Strings;
-import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
-import com.brandon3055.draconicevolution.common.utills.Teleporter;
+import com.brandon3055.draconicevolution.common.utils.ItemNBTHelper;
+import com.brandon3055.draconicevolution.common.utils.Teleporter;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

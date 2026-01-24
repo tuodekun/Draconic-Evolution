@@ -34,12 +34,12 @@ import com.brandon3055.draconicevolution.common.handler.BalanceConfigHandler;
 import com.brandon3055.draconicevolution.common.handler.ConfigHandler;
 import com.brandon3055.draconicevolution.common.items.tools.baseclasses.ToolBase;
 import com.brandon3055.draconicevolution.common.lib.References;
-import com.brandon3055.draconicevolution.common.utills.IConfigurableItem;
-import com.brandon3055.draconicevolution.common.utills.IInventoryTool;
-import com.brandon3055.draconicevolution.common.utills.IUpgradableItem;
-import com.brandon3055.draconicevolution.common.utills.InfoHelper;
-import com.brandon3055.draconicevolution.common.utills.ItemConfigField;
-import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
+import com.brandon3055.draconicevolution.common.utils.IConfigurableItem;
+import com.brandon3055.draconicevolution.common.utils.IInventoryTool;
+import com.brandon3055.draconicevolution.common.utils.IUpgradableItem;
+import com.brandon3055.draconicevolution.common.utils.InfoHelper;
+import com.brandon3055.draconicevolution.common.utils.ItemConfigField;
+import com.brandon3055.draconicevolution.common.utils.ItemNBTHelper;
 import com.brandon3055.draconicevolution.integration.ModHelper;
 
 import cpw.mods.fml.common.Loader;

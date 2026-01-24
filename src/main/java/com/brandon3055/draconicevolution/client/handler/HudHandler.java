@@ -20,8 +20,8 @@ import com.brandon3055.draconicevolution.client.gui.GuiHudConfig;
 import com.brandon3055.draconicevolution.client.utils.GuiHelper;
 import com.brandon3055.draconicevolution.common.handler.ConfigHandler;
 import com.brandon3055.draconicevolution.common.items.armor.CustomArmorHandler;
-import com.brandon3055.draconicevolution.common.utills.IHudDisplayBlock;
-import com.brandon3055.draconicevolution.common.utills.IHudDisplayItem;
+import com.brandon3055.draconicevolution.common.utils.IHudDisplayBlock;
+import com.brandon3055.draconicevolution.common.utils.IHudDisplayItem;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.relauncher.Side;

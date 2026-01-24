@@ -22,9 +22,9 @@ import com.brandon3055.draconicevolution.common.handler.BalanceConfigHandler;
 import com.brandon3055.draconicevolution.common.items.tools.baseclasses.RFItemBase;
 import com.brandon3055.draconicevolution.common.items.tools.baseclasses.ToolBase;
 import com.brandon3055.draconicevolution.common.lib.Strings;
-import com.brandon3055.draconicevolution.common.utills.IUpgradableItem;
-import com.brandon3055.draconicevolution.common.utills.InfoHelper;
-import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
+import com.brandon3055.draconicevolution.common.utils.IUpgradableItem;
+import com.brandon3055.draconicevolution.common.utils.InfoHelper;
+import com.brandon3055.draconicevolution.common.utils.ItemNBTHelper;
 
 import cofh.api.energy.IEnergyContainerItem;
 import cpw.mods.fml.relauncher.Side;

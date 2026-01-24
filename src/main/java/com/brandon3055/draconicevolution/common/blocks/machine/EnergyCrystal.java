@@ -32,8 +32,8 @@ import com.brandon3055.draconicevolution.common.tileentities.energynet.TileEnerg
 import com.brandon3055.draconicevolution.common.tileentities.energynet.TileEnergyTransceiver;
 import com.brandon3055.draconicevolution.common.tileentities.energynet.TileRemoteEnergyBase;
 import com.brandon3055.draconicevolution.common.tileentities.energynet.TileWirelessEnergyTransceiver;
-import com.brandon3055.draconicevolution.common.utills.IHudDisplayBlock;
-import com.brandon3055.draconicevolution.common.utills.InfoHelper;
+import com.brandon3055.draconicevolution.common.utils.IHudDisplayBlock;
+import com.brandon3055.draconicevolution.common.utils.InfoHelper;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

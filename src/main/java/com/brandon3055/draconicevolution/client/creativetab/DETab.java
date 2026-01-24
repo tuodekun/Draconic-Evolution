@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 
 import com.brandon3055.draconicevolution.common.ModBlocks;
 import com.brandon3055.draconicevolution.common.ModItems;
-import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
+import com.brandon3055.draconicevolution.common.utils.ItemNBTHelper;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

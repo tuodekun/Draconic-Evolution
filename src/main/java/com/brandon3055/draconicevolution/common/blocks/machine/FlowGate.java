@@ -27,7 +27,7 @@ import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.tileentities.gates.TileFluidGate;
 import com.brandon3055.draconicevolution.common.tileentities.gates.TileFluxGate;
 import com.brandon3055.draconicevolution.common.tileentities.gates.TileGate;
-import com.brandon3055.draconicevolution.common.utills.Utills;
+import com.brandon3055.draconicevolution.common.utils.Utils;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -174,7 +174,7 @@ public class FlowGate extends BlockDE {
 
         ((TileGate) worldObj.getTileEntity(x, y, z)).output = facing;
         worldObj.setBlockMetadataWithNotify(x, y, z, facing.ordinal() + (type * 6), 2);
-        Utills.updateNeabourBlocks(worldObj, x, y, z);
+        Utils.updateNeabourBlocks(worldObj, x, y, z);
         return true;
     }
 

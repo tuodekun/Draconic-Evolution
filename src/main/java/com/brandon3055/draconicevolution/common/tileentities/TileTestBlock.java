@@ -13,9 +13,9 @@ import net.minecraftforge.common.util.ForgeDirection;
 
 import com.brandon3055.draconicevolution.client.render.particle.ParticleEnergyBeam;
 import com.brandon3055.draconicevolution.client.render.particle.ParticleEnergyField;
-import com.brandon3055.draconicevolution.common.utills.EnergyStorage;
-import com.brandon3055.draconicevolution.common.utills.LogHelper;
-import com.brandon3055.draconicevolution.common.utills.Utills;
+import com.brandon3055.draconicevolution.common.utils.EnergyStorage;
+import com.brandon3055.draconicevolution.common.utils.LogHelper;
+import com.brandon3055.draconicevolution.common.utils.Utils;
 
 import cofh.api.energy.IEnergyHandler;
 import cofh.api.energy.IEnergyReceiver;
@@ -97,7 +97,7 @@ public class TileTestBlock extends TileEntity implements IEnergyHandler {
         EntityPlayer player = null;
         if (worldObj != null) player = worldObj.getClosestPlayer(xCoord, yCoord, zCoord, -1);
         if (player != null) LogHelper
-                .info("Read: " + Utills.getDistanceAtoB(player.posX, player.posY, player.posZ, xCoord, yCoord, zCoord));
+                .info("Read: " + Utils.getDistanceAtoB(player.posX, player.posY, player.posZ, xCoord, yCoord, zCoord));
         LogHelper.info(worldObj + " " + player);
     }
 
@@ -106,7 +106,7 @@ public class TileTestBlock extends TileEntity implements IEnergyHandler {
         super.writeToNBT(p_145841_1_);
         EntityPlayer player = null;
         if (worldObj != null) player = worldObj.getClosestPlayer(xCoord, yCoord, zCoord, -1);
-        if (player != null) LogHelper.info(
-                "Write: " + Utills.getDistanceAtoB(player.posX, player.posY, player.posZ, xCoord, yCoord, zCoord));
+        if (player != null) LogHelper
+                .info("Write: " + Utils.getDistanceAtoB(player.posX, player.posY, player.posZ, xCoord, yCoord, zCoord));
     }
 }

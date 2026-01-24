@@ -1,4 +1,4 @@
-package com.brandon3055.draconicevolution.common.utills;
+package com.brandon3055.draconicevolution.common.utils;
 
 import net.minecraft.command.IEntitySelector;
 import net.minecraft.entity.EntityLivingBase;
@@ -14,7 +14,7 @@ import cpw.mods.fml.common.registry.GameData;
  * Created by Brandon on 25/07/2014.
  */
 @SuppressWarnings("unused")
-public class Utills {
+public class Utils {
 
     public static IEntitySelector selectLivingBase = entity -> entity instanceof EntityLivingBase;
 

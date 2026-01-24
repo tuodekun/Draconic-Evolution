@@ -10,9 +10,9 @@ import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 import com.brandon3055.draconicevolution.common.ModBlocks;
 import com.brandon3055.draconicevolution.common.ModItems;
-import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
-import com.brandon3055.draconicevolution.common.utills.LogHelper;
-import com.brandon3055.draconicevolution.common.utills.ShapedOreEnergyRecipe;
+import com.brandon3055.draconicevolution.common.utils.ItemNBTHelper;
+import com.brandon3055.draconicevolution.common.utils.LogHelper;
+import com.brandon3055.draconicevolution.common.utils.ShapedOreEnergyRecipe;
 
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.GameRegistry;

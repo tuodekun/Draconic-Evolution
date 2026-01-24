@@ -20,8 +20,8 @@ import com.brandon3055.draconicevolution.client.utils.GuiHelper;
 import com.brandon3055.draconicevolution.common.ModItems;
 import com.brandon3055.draconicevolution.common.container.ContainerUpgradeModifier;
 import com.brandon3055.draconicevolution.common.tileentities.TileUpgradeModifier;
-import com.brandon3055.draconicevolution.common.utills.IUpgradableItem;
-import com.brandon3055.draconicevolution.common.utills.IUpgradableItem.EnumUpgrade;
+import com.brandon3055.draconicevolution.common.utils.IUpgradableItem;
+import com.brandon3055.draconicevolution.common.utils.IUpgradableItem.EnumUpgrade;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

@@ -22,8 +22,8 @@ import com.brandon3055.draconicevolution.common.handler.BalanceConfigHandler;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.tileentities.TileObjectSync;
 import com.brandon3055.draconicevolution.common.tileentities.TileParticleGenerator;
-import com.brandon3055.draconicevolution.common.utills.InfoHelper;
-import com.brandon3055.draconicevolution.common.utills.LogHelper;
+import com.brandon3055.draconicevolution.common.utils.InfoHelper;
+import com.brandon3055.draconicevolution.common.utils.LogHelper;
 
 import cpw.mods.fml.common.network.NetworkRegistry;
 

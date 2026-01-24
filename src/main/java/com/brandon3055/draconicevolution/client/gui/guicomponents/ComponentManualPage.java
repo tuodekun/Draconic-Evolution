@@ -27,8 +27,8 @@ import com.brandon3055.draconicevolution.client.utils.CustomResourceLocation;
 import com.brandon3055.draconicevolution.client.utils.GuiHelper;
 import com.brandon3055.draconicevolution.client.utils.guicomponents.ComponentScrollingBase;
 import com.brandon3055.draconicevolution.client.utils.guicomponents.GUIScrollingBase;
-import com.brandon3055.draconicevolution.common.utills.InfoHelper;
-import com.brandon3055.draconicevolution.common.utills.Utills;
+import com.brandon3055.draconicevolution.common.utils.InfoHelper;
+import com.brandon3055.draconicevolution.common.utils.Utils;
 
 /**
  * Created by Brandon on 19/03/2015.
@@ -48,7 +48,7 @@ public class ComponentManualPage extends ComponentScrollingBase {
         super(x, y, gui);
         this.page = page;
         pageLength = 25;
-        stack = Utills.getStackFromName(page.name, page.meta);
+        stack = Utils.getStackFromName(page.name, page.meta);
         ContentComponent title = new ContentComponent("title." + page.getLocalizedName(), pageLength, this);
         pageLength += title.getHeight();
         contentList.add(title);
@@ -157,7 +157,7 @@ public class ComponentManualPage extends ComponentScrollingBase {
             } else if (type == 2) {
                 String s = content.substring(content.indexOf("[c]") + 3);
                 String name = s.substring(0, s.lastIndexOf(":"));
-                ItemStack stack = Utills.getStackFromName(name, Integer.parseInt(s.substring(s.lastIndexOf(":") + 1)));
+                ItemStack stack = Utils.getStackFromName(name, Integer.parseInt(s.substring(s.lastIndexOf(":") + 1)));
                 result = stack;
 
                 if (stack != null) {

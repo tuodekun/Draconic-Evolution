@@ -1,4 +1,4 @@
-package com.brandon3055.draconicevolution.common.utills;
+package com.brandon3055.draconicevolution.common.utils;
 
 import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
 
@@ -50,7 +50,7 @@ public class ItemConfigField {
     }
 
     public ItemConfigField readFromItem(ItemStack stack, Object defaultExpected) {
-        value = DataUtills.readObjectFromCompound(
+        value = DataUtils.readObjectFromCompound(
                 IConfigurableItem.ProfileHelper.getProfileCompound(stack),
                 datatype,
                 name,

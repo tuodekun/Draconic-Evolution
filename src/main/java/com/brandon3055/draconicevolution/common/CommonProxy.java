@@ -91,10 +91,10 @@ import com.brandon3055.draconicevolution.common.tileentities.multiblocktiles.Til
 import com.brandon3055.draconicevolution.common.tileentities.multiblocktiles.reactor.TileReactorCore;
 import com.brandon3055.draconicevolution.common.tileentities.multiblocktiles.reactor.TileReactorEnergyInjector;
 import com.brandon3055.draconicevolution.common.tileentities.multiblocktiles.reactor.TileReactorStabilizer;
-import com.brandon3055.draconicevolution.common.utills.DragonChunkLoader;
-import com.brandon3055.draconicevolution.common.utills.LogHelper;
-import com.brandon3055.draconicevolution.common.utills.handlers.FileHandler;
-import com.brandon3055.draconicevolution.common.utills.handlers.ProcessHandler;
+import com.brandon3055.draconicevolution.common.utils.DragonChunkLoader;
+import com.brandon3055.draconicevolution.common.utils.LogHelper;
+import com.brandon3055.draconicevolution.common.utils.handlers.FileHandler;
+import com.brandon3055.draconicevolution.common.utils.handlers.ProcessHandler;
 import com.brandon3055.draconicevolution.common.world.DraconicWorldGenerator;
 import com.brandon3055.draconicevolution.integration.computers.CCOCIntegration;
 

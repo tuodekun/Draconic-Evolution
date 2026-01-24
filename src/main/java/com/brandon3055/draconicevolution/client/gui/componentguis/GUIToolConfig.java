@@ -31,10 +31,10 @@ import com.brandon3055.draconicevolution.common.items.weapons.BowHandler;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.network.ContributorPacket;
 import com.brandon3055.draconicevolution.common.network.ItemConfigPacket;
-import com.brandon3055.draconicevolution.common.utills.IConfigurableItem;
-import com.brandon3055.draconicevolution.common.utills.IInventoryTool;
-import com.brandon3055.draconicevolution.common.utills.ItemConfigField;
-import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
+import com.brandon3055.draconicevolution.common.utils.IConfigurableItem;
+import com.brandon3055.draconicevolution.common.utils.IInventoryTool;
+import com.brandon3055.draconicevolution.common.utils.ItemConfigField;
+import com.brandon3055.draconicevolution.common.utils.ItemNBTHelper;
 
 /**
  * Created by Brandon on 26/12/2014.

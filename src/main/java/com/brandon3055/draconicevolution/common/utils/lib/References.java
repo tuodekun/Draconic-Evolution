@@ -1,4 +1,4 @@
-package com.brandon3055.draconicevolution.common.utills.lib;
+package com.brandon3055.draconicevolution.common.utils.lib;
 
 /**
  * Created by Brandon on 14/5/2015.

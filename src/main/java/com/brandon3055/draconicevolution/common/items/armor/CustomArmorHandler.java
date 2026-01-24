@@ -23,8 +23,8 @@ import com.brandon3055.draconicevolution.DraconicEvolution;
 import com.brandon3055.draconicevolution.common.handler.BalanceConfigHandler;
 import com.brandon3055.draconicevolution.common.handler.ConfigHandler;
 import com.brandon3055.draconicevolution.common.network.ShieldHitPacket;
-import com.brandon3055.draconicevolution.common.utills.IUpgradableItem;
-import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
+import com.brandon3055.draconicevolution.common.utils.IUpgradableItem;
+import com.brandon3055.draconicevolution.common.utils.ItemNBTHelper;
 import com.brandon3055.draconicevolution.integration.ModHelper;
 
 import cofh.api.energy.IEnergyContainerItem;

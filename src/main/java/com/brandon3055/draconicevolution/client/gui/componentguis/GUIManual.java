@@ -29,7 +29,7 @@ import com.brandon3055.draconicevolution.client.gui.guicomponents.ComponentContr
 import com.brandon3055.draconicevolution.client.gui.guicomponents.ComponentIndexButton;
 import com.brandon3055.draconicevolution.client.gui.guicomponents.ComponentManualPage;
 import com.brandon3055.draconicevolution.client.handler.ResourceHandler;
-import com.brandon3055.draconicevolution.client.utils.ClientUtills;
+import com.brandon3055.draconicevolution.client.utils.ClientUtils;
 import com.brandon3055.draconicevolution.client.utils.guicomponents.ComponentBase;
 import com.brandon3055.draconicevolution.client.utils.guicomponents.ComponentButton;
 import com.brandon3055.draconicevolution.client.utils.guicomponents.ComponentCollection;
@@ -40,8 +40,8 @@ import com.brandon3055.draconicevolution.common.container.DummyContainer;
 import com.brandon3055.draconicevolution.common.handler.ConfigHandler;
 import com.brandon3055.draconicevolution.common.handler.ContributorHandler;
 import com.brandon3055.draconicevolution.common.lib.References;
-import com.brandon3055.draconicevolution.common.utills.InfoHelper;
-import com.brandon3055.draconicevolution.common.utills.LogHelper;
+import com.brandon3055.draconicevolution.common.utils.InfoHelper;
+import com.brandon3055.draconicevolution.common.utils.LogHelper;
 import com.google.gson.stream.JsonReader;
 
 /**
@@ -547,7 +547,7 @@ public class GUIManual extends GUIScrollingBase implements GuiYesNoCallback {
 
     @Override
     public void confirmClicked(boolean confirmed, int id) {
-        if (confirmed) ClientUtills.openLink("https://www.patreon.com/brandon3055");
+        if (confirmed) ClientUtils.openLink("https://www.patreon.com/brandon3055");
         mc.displayGuiScreen(this);
     }
 }

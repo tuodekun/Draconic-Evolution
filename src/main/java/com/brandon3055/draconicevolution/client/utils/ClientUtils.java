@@ -2,13 +2,13 @@ package com.brandon3055.draconicevolution.client.utils;
 
 import java.net.URI;
 
-import com.brandon3055.draconicevolution.common.utills.LogHelper;
+import com.brandon3055.draconicevolution.common.utils.LogHelper;
 
 /**
  * Created by brandon3055 on 11/11/2015.
  */
 @SuppressWarnings("unused")
-public class ClientUtills {
+public class ClientUtils {
 
     public static void openLink(String url) {
         try {

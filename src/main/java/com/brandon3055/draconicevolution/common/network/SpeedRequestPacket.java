@@ -2,8 +2,8 @@ package com.brandon3055.draconicevolution.common.network;
 
 import com.brandon3055.draconicevolution.common.handler.ConfigHandler;
 import com.brandon3055.draconicevolution.common.handler.MinecraftForgeEventHandler;
-import com.brandon3055.draconicevolution.common.utills.LogHelper;
-import com.brandon3055.draconicevolution.common.utills.PlayerUtils;
+import com.brandon3055.draconicevolution.common.utils.LogHelper;
+import com.brandon3055.draconicevolution.common.utils.PlayerUtils;
 
 import cpw.mods.fml.common.network.simpleimpl.IMessage;
 import cpw.mods.fml.common.network.simpleimpl.IMessageHandler;

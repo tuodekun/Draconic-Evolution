@@ -10,7 +10,7 @@ import net.minecraftforge.fluids.FluidTankInfo;
 import net.minecraftforge.fluids.IFluidHandler;
 
 import com.brandon3055.draconicevolution.common.lib.References;
-import com.brandon3055.draconicevolution.common.utills.LogHelper;
+import com.brandon3055.draconicevolution.common.utils.LogHelper;
 
 /**
  * Created by Brandon on 29/6/2015.
