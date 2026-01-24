@@ -21,10 +21,6 @@ public class PortalHelper {
         return block == ModBlocks.infusedObsidian;
     }
 
-    public static boolean isReceptacle(Block block) {
-        return block == ModBlocks.dislocatorReceptacle;
-    }
-
     public static boolean isPortal(Block block) {
         return block == ModBlocks.portal;
     }

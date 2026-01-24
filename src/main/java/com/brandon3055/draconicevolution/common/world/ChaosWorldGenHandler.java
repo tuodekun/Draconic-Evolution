@@ -48,8 +48,6 @@ public class ChaosWorldGenHandler {
                 && closestSpawn.z <= posZ + 16)
             generateStructures(world, closestSpawn, random);
 
-        // long l = System.nanoTime();
-
         for (int trueX = posX; trueX < posX + 16; trueX++) {
             for (int y = 0; y < 255; y++) {
                 for (int trueZ = posZ; trueZ < posZ + 16; trueZ++) {
@@ -96,13 +94,6 @@ public class ChaosWorldGenHandler {
                                 y + 64,
                                 z + closestSpawn.z,
                                 (dist > 60 || dist > random.nextInt(60)) ? Blocks.end_stone : Blocks.obsidian);
-
-                    // if (density > 0.1 && world.getBlock(x + closestSpawn.x, y + 64, z + closestSpawn.z) ==
-                    // Blocks.air) {
-                    // boolean b = dist > 60 || dist > random.nextInt(60);
-                    // world.setBlock(x + closestSpawn.x, y + 64, z + closestSpawn.z, (dist > 60 || dist >
-                    // random.nextInt(60)) ? Blocks.end_stone : Blocks.obsidian);
-                    // }
                 }
             }
         }

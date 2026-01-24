@@ -14,9 +14,9 @@ public interface IConfigurableItem {
 
     List<ItemConfigField> getFields(ItemStack stack, int slot);
 
-    public boolean hasProfiles();
+    boolean hasProfiles();
 
-    public static class ProfileHelper {
+    class ProfileHelper {
 
         public static NBTTagCompound getProfileCompound(ItemStack stack) {
             int profile = ItemNBTHelper.getInteger(stack, "ConfigProfile", 0);

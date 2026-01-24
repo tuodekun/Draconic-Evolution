@@ -61,12 +61,6 @@ public class EnergyStorage implements IEnergyStorage {
         }
     }
 
-    public void setMaxTransfer(int maxTransfer) {
-
-        setMaxReceive(maxTransfer);
-        setMaxExtract(maxTransfer);
-    }
-
     public void setMaxReceive(int maxReceive) {
 
         this.maxReceive = maxReceive;

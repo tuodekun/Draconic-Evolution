@@ -1,9 +1,7 @@
 package com.brandon3055.draconicevolution.common.utills;
 
 import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
-import net.minecraft.block.Block;
 import net.minecraft.inventory.InventoryCrafting;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
@@ -13,14 +11,6 @@ import cofh.api.energy.IEnergyContainerItem;
  * Created by Brandon on 8/12/2014.
  */
 public class ShapedOreEnergyRecipe extends ShapedOreRecipe {
-
-    public ShapedOreEnergyRecipe(Block result, Object... recipe) {
-        this(new ItemStack(result), recipe);
-    }
-
-    public ShapedOreEnergyRecipe(Item result, Object... recipe) {
-        this(new ItemStack(result), recipe);
-    }
 
     public ShapedOreEnergyRecipe(ItemStack result, Object... recipe) {
         super(result, recipe);

@@ -10,6 +10,8 @@ import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.network.ItemConfigPacket;
 
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
+
 /**
  * Created by Brandon on 29/12/2014.
  */
@@ -49,10 +51,6 @@ public class ItemConfigField {
         return StatCollector.translateToLocal("button.de." + name + ".name");
     }
 
-    // public void writeToItem(ItemStack stack){
-    // DataUtills.writeObjectToItem(stack, value, datatype, name);
-    // }
-
     public ItemConfigField readFromItem(ItemStack stack, Object defaultExpected) {
         value = DataUtills.readObjectFromCompound(
                 IConfigurableItem.ProfileHelper.getProfileCompound(stack),
@@ -71,7 +69,7 @@ public class ItemConfigField {
         if (datatype == References.INT_ID && !StringUtils.isNullOrEmpty(modifier) && modifier.equals("AOE")) {
             int i = (Integer) value;
             i *= 2;
-            return String.valueOf((i + 1) + "x" + (i + 1));
+            return formatNumber(i + 1) + "x" + formatNumber(i + 1);
         } else if (datatype == References.BOOLEAN_ID) {
             return (Boolean) value ? StatCollector.translateToLocal("gui.de.on.txt")
                     : StatCollector.translateToLocal("gui.de.off.txt");
@@ -80,7 +78,7 @@ public class ItemConfigField {
                 return Math.round((Float) value * 100D) + "%";
             } else if (datatype == References.FLOAT_ID && !StringUtils.isNullOrEmpty(modifier)
                     && modifier.equals("PLUSPERCENT")) {
-                        return "+" + Math.round((Float) value * 100D) + "%";
+                        return "+" + formatNumber(Math.round((Float) value * 100D)) + "%";
                     } else {
                         return String.valueOf(value);
                     }
@@ -90,7 +88,7 @@ public class ItemConfigField {
         if (datatype == References.INT_ID && !StringUtils.isNullOrEmpty(modifier) && modifier.equals("AOE")) {
             int i = (Integer) max;
             i *= 2;
-            return String.valueOf((i + 1) + "x" + (i + 1));
+            return formatNumber(i + 1) + "x" + formatNumber(i + 1);
         } else {
             return String.valueOf(max);
         }
@@ -102,29 +100,6 @@ public class ItemConfigField {
 
     public void sendChanges() {
         DraconicEvolution.network.sendToServer(new ItemConfigPacket(this));
-    }
-
-    public int castToInt() {
-        switch (datatype) {
-            case References.BYTE_ID:
-                return (int) (Byte) value;
-            case References.SHORT_ID:
-                return (int) (Short) value;
-            case References.INT_ID:
-                return (Integer) value;
-            case References.LONG_ID:
-                long l = (Long) value;
-                return (int) l;
-            case References.FLOAT_ID:
-                float f = (Float) value;
-                return (int) f;
-            case References.DOUBLE_ID:
-                double d = (Double) value;
-                return (int) d;
-            case References.BOOLEAN_ID:
-                return (Boolean) value ? 1 : 0;
-        }
-        return 0;
     }
 
     public double castToDouble() {

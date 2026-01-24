@@ -23,6 +23,8 @@ import cofh.api.energy.IEnergyContainerItem;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
+
 @SideOnly(Side.CLIENT)
 public class GUIEnergyInfuser extends GuiContainer {
 
@@ -118,10 +120,10 @@ public class GUIEnergyInfuser extends GuiContainer {
             ArrayList<String> internal = new ArrayList<String>();
             internal.add(StatCollector.translateToLocal("gui.de.internalStorage.txt"));
             internal.add(
-                    "" + EnumChatFormatting.DARK_BLUE
-                            + tile.energy.getEnergyStored()
+                    EnumChatFormatting.DARK_BLUE
+                            + formatNumber(tile.energy.getEnergyStored())
                             + "/"
-                            + tile.energy.getMaxEnergyStored());
+                            + formatNumber(tile.energy.getMaxEnergyStored()));
             GL11.glPushAttrib(GL11.GL_LIGHTING_BIT);
             drawHoveringText(internal, x + guiLeft, y + guiTop, fontRendererObj);
             GL11.glPopAttrib();
@@ -134,10 +136,10 @@ public class GUIEnergyInfuser extends GuiContainer {
             ArrayList<String> internal = new ArrayList<String>();
             internal.add(StatCollector.translateToLocal("gui.de.itemStorage.txt"));
             internal.add(
-                    "" + EnumChatFormatting.DARK_BLUE
-                            + item.getEnergyStored(tile.getStackInSlot(0))
+                    EnumChatFormatting.DARK_BLUE
+                            + formatNumber(item.getEnergyStored(tile.getStackInSlot(0)))
                             + "/"
-                            + item.getMaxEnergyStored(tile.getStackInSlot(0)));
+                            + formatNumber(item.getMaxEnergyStored(tile.getStackInSlot(0))));
             GL11.glPushAttrib(GL11.GL_LIGHTING_BIT);
             drawHoveringText(internal, x + guiLeft, y + guiTop, fontRendererObj);
             GL11.glPopAttrib();

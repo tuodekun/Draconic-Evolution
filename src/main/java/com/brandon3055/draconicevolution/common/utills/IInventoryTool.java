@@ -7,9 +7,9 @@ import net.minecraft.enchantment.Enchantment;
  */
 public interface IInventoryTool extends IConfigurableItem {
 
-    public abstract String getInventoryName();
+   String getInventoryName();
 
-    public abstract int getInventorySlots();
+    int getInventorySlots();
 
-    public abstract boolean isEnchantValid(Enchantment enchant);
+    boolean isEnchantValid(Enchantment enchant);
 }

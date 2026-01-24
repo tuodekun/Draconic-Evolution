@@ -10,6 +10,7 @@ import cpw.mods.fml.common.FMLLog;
 /**
  * Created by Brandon on 3/07/2014.
  */
+@SuppressWarnings("unused")
 public class LogHelper {
 
     public static void log(Level logLevel, Object object) {

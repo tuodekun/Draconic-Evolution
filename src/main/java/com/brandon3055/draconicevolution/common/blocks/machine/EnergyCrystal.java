@@ -35,17 +35,13 @@ import com.brandon3055.draconicevolution.common.utills.IHudDisplayBlock;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumberCompact;
+
 /**
  * Created by Brandon on 10/02/2015.
  */
 public class EnergyCrystal extends BlockDE implements IHudDisplayBlock {
-
-    public static final byte RELAY_TIER_1 = 0;
-    public static final byte RELAY_TIER_2 = 1;
-    public static final byte TRANSCEIVER_TIER_1 = 2;
-    public static final byte TRANSCEIVER_TIER_2 = 3;
-    public static final byte WIRELESS_TRANSCEIVER_TIER_1 = 3;
-    public static final byte WIRELESS_TRANSCEIVER_TIER_2 = 4;
 
     public EnergyCrystal() {
         super(Material.glass);
@@ -232,8 +228,8 @@ public class EnergyCrystal extends BlockDE implements IHudDisplayBlock {
             list.add(
                     InfoHelper.HITC() + StatCollector
                             .translateToLocal(this.getUnlocalizedName() + world.getBlockMetadata(x, y, z) + ".name"));
-            list.add("RF: " + tile.getEnergyStored(ForgeDirection.DOWN));
-            list.add("Cap: " + tile.getCapacity() + "%");
+            list.add("RF: " + formatNumberCompact(tile.getEnergyStored(ForgeDirection.DOWN)));
+            list.add("Cap: " + formatNumber(tile.getCapacity()) + "%");
             if (tile instanceof TileEnergyTransceiver) {
                 String x5 = ((TileEnergyTransceiver) tile).getPowerTier() > 0
                         && ((TileEnergyTransceiver) tile).transferBoost
@@ -247,16 +243,16 @@ public class EnergyCrystal extends BlockDE implements IHudDisplayBlock {
             if (tile instanceof TileRemoteEnergyBase) {
                 list.add(
                         StatCollector.translateToLocal("info.de.connections.txt") + ": "
-                                + ((TileRemoteEnergyBase) tile).linkedDevices.size()
+                                + formatNumber(((TileRemoteEnergyBase) tile).linkedDevices.size())
                                 + "/"
-                                + tile.getMaxConnections());
+                                + formatNumber(tile.getMaxConnections()));
             }
             if (tile instanceof TileWirelessEnergyTransceiver) {
                 list.add(
                         StatCollector.translateToLocal("info.de.wirelessConnections.txt") + ": "
-                                + ((TileWirelessEnergyTransceiver) tile).receiverList.size()
+                                + formatNumber(((TileWirelessEnergyTransceiver) tile).receiverList.size())
                                 + "/"
-                                + ((TileWirelessEnergyTransceiver) tile).getmaxWirelessConnections());
+                                + formatNumber(((TileWirelessEnergyTransceiver) tile).getmaxWirelessConnections()));
             }
 
             if (tile instanceof TileRemoteEnergyBase) {
