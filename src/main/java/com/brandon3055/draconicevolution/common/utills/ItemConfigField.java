@@ -1,5 +1,7 @@
 package com.brandon3055.draconicevolution.common.utills;
 
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
+
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.util.StringUtils;
@@ -9,8 +11,6 @@ import com.brandon3055.draconicevolution.brandonscore.common.utills.DataUtills;
 import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.network.ItemConfigPacket;
-
-import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
 
 /**
  * Created by Brandon on 29/12/2014.

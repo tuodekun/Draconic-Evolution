@@ -1,5 +1,7 @@
 package com.brandon3055.draconicevolution.client.gui;
 
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -22,8 +24,6 @@ import com.brandon3055.draconicevolution.common.tileentities.TileEnergyInfuser;
 import cofh.api.energy.IEnergyContainerItem;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-
-import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
 
 @SideOnly(Side.CLIENT)
 public class GUIEnergyInfuser extends GuiContainer {
@@ -120,8 +120,7 @@ public class GUIEnergyInfuser extends GuiContainer {
             ArrayList<String> internal = new ArrayList<String>();
             internal.add(StatCollector.translateToLocal("gui.de.internalStorage.txt"));
             internal.add(
-                    EnumChatFormatting.DARK_BLUE
-                            + formatNumber(tile.energy.getEnergyStored())
+                    EnumChatFormatting.DARK_BLUE + formatNumber(tile.energy.getEnergyStored())
                             + "/"
                             + formatNumber(tile.energy.getMaxEnergyStored()));
             GL11.glPushAttrib(GL11.GL_LIGHTING_BIT);
@@ -136,8 +135,7 @@ public class GUIEnergyInfuser extends GuiContainer {
             ArrayList<String> internal = new ArrayList<String>();
             internal.add(StatCollector.translateToLocal("gui.de.itemStorage.txt"));
             internal.add(
-                    EnumChatFormatting.DARK_BLUE
-                            + formatNumber(item.getEnergyStored(tile.getStackInSlot(0)))
+                    EnumChatFormatting.DARK_BLUE + formatNumber(item.getEnergyStored(tile.getStackInSlot(0)))
                             + "/"
                             + formatNumber(item.getMaxEnergyStored(tile.getStackInSlot(0))));
             GL11.glPushAttrib(GL11.GL_LIGHTING_BIT);

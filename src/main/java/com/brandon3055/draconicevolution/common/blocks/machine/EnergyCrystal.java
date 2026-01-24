@@ -1,5 +1,8 @@
 package com.brandon3055.draconicevolution.common.blocks.machine;
 
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumberCompact;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,9 +37,6 @@ import com.brandon3055.draconicevolution.common.utills.IHudDisplayBlock;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-
-import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
-import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumberCompact;
 
 /**
  * Created by Brandon on 10/02/2015.

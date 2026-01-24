@@ -1,13 +1,13 @@
 package com.brandon3055.draconicevolution.common.tileentities.gates;
 
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
+
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.util.ForgeDirection;
 
 import com.brandon3055.draconicevolution.common.lib.References;
 
 import cofh.api.energy.IEnergyReceiver;
-
-import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
 
 /**
  * Created by Brandon on 29/6/2015.

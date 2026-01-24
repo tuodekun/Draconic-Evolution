@@ -7,7 +7,7 @@ import net.minecraft.enchantment.Enchantment;
  */
 public interface IInventoryTool extends IConfigurableItem {
 
-   String getInventoryName();
+    String getInventoryName();
 
     int getInventorySlots();
 

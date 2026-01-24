@@ -1,9 +1,10 @@
 package com.brandon3055.draconicevolution.common.utills;
 
-import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.ShapedOreRecipe;
+
+import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
 
 import cofh.api.energy.IEnergyContainerItem;
 

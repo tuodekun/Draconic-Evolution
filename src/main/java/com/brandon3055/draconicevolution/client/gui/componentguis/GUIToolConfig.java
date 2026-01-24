@@ -1,5 +1,7 @@
 package com.brandon3055.draconicevolution.client.gui.componentguis;
 
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +22,6 @@ import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.C
 import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentTexturedRect;
 import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.GUIBase;
 import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.client.gui.GuiHudConfig;
 import com.brandon3055.draconicevolution.client.gui.guicomponents.ComponentConfigItemButton;
 import com.brandon3055.draconicevolution.client.gui.guicomponents.ComponentFieldAdjuster;
@@ -34,8 +35,6 @@ import com.brandon3055.draconicevolution.common.network.ItemConfigPacket;
 import com.brandon3055.draconicevolution.common.utills.IConfigurableItem;
 import com.brandon3055.draconicevolution.common.utills.IInventoryTool;
 import com.brandon3055.draconicevolution.common.utills.ItemConfigField;
-
-import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
 
 /**
  * Created by Brandon on 26/12/2014.

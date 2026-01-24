@@ -1,10 +1,10 @@
 package com.brandon3055.draconicevolution.common.items.weapons;
 
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
@@ -20,6 +20,8 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
 import com.brandon3055.draconicevolution.DraconicEvolution;
+import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
+import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
 import com.brandon3055.draconicevolution.common.ModItems;
 import com.brandon3055.draconicevolution.common.entity.EntityPersistentItem;
 import com.brandon3055.draconicevolution.common.handler.BalanceConfigHandler;
@@ -35,8 +37,6 @@ import com.brandon3055.draconicevolution.common.utills.ItemConfigField;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-
-import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
 
 public class WyvernBow extends ItemBow
         implements IInventoryTool, IUpgradableItem, IEnergyContainerWeaponItem, IHudDisplayItem {
@@ -310,8 +310,10 @@ public class WyvernBow extends ItemBow
                         + formatNumber(EnumUpgrade.ARROW_SPEED.getUpgradePoints(stack) * 100)
                         + "%");
         list.add(
-                InfoHelper.ITC() + StatCollector.translateToLocal(
-                        "gui.de.ArrowDamage.txt") + ": " + InfoHelper.HITC() + properties.arrowDamage);
+                InfoHelper.ITC() + StatCollector.translateToLocal("gui.de.ArrowDamage.txt")
+                        + ": "
+                        + InfoHelper.HITC()
+                        + properties.arrowDamage);
         list.add(
                 InfoHelper.ITC() + StatCollector.translateToLocal("gui.de.DrawSpeed.txt")
                         + ": "

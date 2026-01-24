@@ -1,8 +1,8 @@
 package com.brandon3055.draconicevolution.brandonscore.client.utills;
 
-import com.brandon3055.draconicevolution.common.utills.LogHelper;
-
 import java.net.URI;
+
+import com.brandon3055.draconicevolution.common.utills.LogHelper;
 
 /**
  * Created by brandon3055 on 11/11/2015.

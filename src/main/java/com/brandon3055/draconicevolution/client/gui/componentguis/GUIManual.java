@@ -11,8 +11,6 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentBase;
-import com.brandon3055.draconicevolution.brandonscore.client.utills.ClientUtills;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.PositionedSoundRecord;
 import net.minecraft.client.gui.GuiConfirmOpenLink;
@@ -27,11 +25,13 @@ import org.apache.commons.io.IOUtils;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
 
+import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentBase;
 import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentButton;
 import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentCollection;
 import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentTextureButton;
 import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentTexturedRect;
 import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.GUIScrollingBase;
+import com.brandon3055.draconicevolution.brandonscore.client.utills.ClientUtills;
 import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
 import com.brandon3055.draconicevolution.client.gui.guicomponents.ComponentContributorsPage;
 import com.brandon3055.draconicevolution.client.gui.guicomponents.ComponentIndexButton;

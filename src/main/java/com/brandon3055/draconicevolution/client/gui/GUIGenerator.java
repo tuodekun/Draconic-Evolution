@@ -1,9 +1,10 @@
 package com.brandon3055.draconicevolution.client.gui;
 
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
+
 import java.util.ArrayList;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -21,8 +22,6 @@ import com.brandon3055.draconicevolution.common.tileentities.TileGenerator;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-
-import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
 
 @SideOnly(Side.CLIENT)
 public class GUIGenerator extends GuiContainer {
@@ -76,7 +75,11 @@ public class GUIGenerator extends GuiContainer {
                 18,
                 18 - (int) (fuel * 13)); // Power bar
 
-        fontRendererObj.drawStringWithShadow(StatCollector.translateToLocal("tile.draconicevolution:generator.name"), guiLeft + 64, guiTop, 0x00FFFF);
+        fontRendererObj.drawStringWithShadow(
+                StatCollector.translateToLocal("tile.draconicevolution:generator.name"),
+                guiLeft + 64,
+                guiTop,
+                0x00FFFF);
 
         int x = X - guiLeft;
         int y = Y - guiTop;
@@ -84,8 +87,7 @@ public class GUIGenerator extends GuiContainer {
             ArrayList<String> internal = new ArrayList<String>();
             internal.add(StatCollector.translateToLocal("gui.de.internalStorage.txt"));
             internal.add(
-                    EnumChatFormatting.DARK_BLUE
-                            + formatNumber(tile.getEnergyStored(ForgeDirection.UP))
+                    EnumChatFormatting.DARK_BLUE + formatNumber(tile.getEnergyStored(ForgeDirection.UP))
                             + "/"
                             + formatNumber(tile.getMaxEnergyStored(ForgeDirection.UP)));
             drawHoveringText(internal, x + guiLeft, y + guiTop, fontRendererObj);

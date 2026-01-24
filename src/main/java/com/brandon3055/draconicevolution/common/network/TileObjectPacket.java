@@ -1,8 +1,8 @@
 package com.brandon3055.draconicevolution.common.network;
 
-import com.brandon3055.draconicevolution.brandonscore.common.utills.DataUtills;
 import net.minecraft.client.Minecraft;
 
+import com.brandon3055.draconicevolution.brandonscore.common.utills.DataUtills;
 import com.brandon3055.draconicevolution.common.container.ContainerDataSync;
 import com.brandon3055.draconicevolution.common.tileentities.TileObjectSync;
 

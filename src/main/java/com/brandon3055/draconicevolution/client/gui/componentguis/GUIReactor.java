@@ -1,5 +1,7 @@
 package com.brandon3055.draconicevolution.client.gui.componentguis;
 
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,8 +25,6 @@ import com.brandon3055.draconicevolution.common.container.ContainerReactor;
 import com.brandon3055.draconicevolution.common.handler.ConfigHandler;
 import com.brandon3055.draconicevolution.common.tileentities.multiblocktiles.reactor.TileReactorCore;
 import com.brandon3055.draconicevolution.common.tileentities.multiblocktiles.reactor.TileReactorCore.ReactorState;
-
-import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
 
 /**
  * Created by brandon3055 on 30/7/2015.
@@ -268,11 +268,8 @@ public class GUIReactor extends GUIBase {
                 .drawString(formatNumber((int) Math.min(inputRate, Integer.MAX_VALUE)) + "RF/t", 60, 2 + 4 * 24, 0);
         fontRendererObj
                 .drawString(StatCollector.translateToLocal("gui.de.fuelConversion.name"), 55, 16 + 4 * 24, 0x0000FF);
-        fontRendererObj.drawString(
-                formatNumber((int) Math.round(core.fuelUseRate * 1000000D)) + "nb/t",
-                60,
-                2 + 5 * 24,
-                0);
+        fontRendererObj
+                .drawString(formatNumber((int) Math.round(core.fuelUseRate * 1000000D)) + "nb/t", 60, 2 + 5 * 24, 0);
     }
 
     private void drawStatus() {

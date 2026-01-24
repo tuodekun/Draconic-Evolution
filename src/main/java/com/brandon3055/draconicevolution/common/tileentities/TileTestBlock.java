@@ -2,7 +2,6 @@ package com.brandon3055.draconicevolution.common.tileentities;
 
 import static net.minecraftforge.common.util.ForgeDirection.UP;
 
-import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.NetworkManager;
@@ -12,6 +11,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraftforge.common.util.ForgeDirection;
 
+import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.client.render.particle.ParticleEnergyBeam;
 import com.brandon3055.draconicevolution.client.render.particle.ParticleEnergyField;
 import com.brandon3055.draconicevolution.common.utills.EnergyStorage;
@@ -20,8 +20,8 @@ import com.brandon3055.draconicevolution.common.utills.LogHelper;
 import cofh.api.energy.IEnergyHandler;
 import cofh.api.energy.IEnergyReceiver;
 
-/** todo review
- * Created by Brandon on 24/06/2014.
+/**
+ * todo review Created by Brandon on 24/06/2014.
  */
 public class TileTestBlock extends TileEntity implements IEnergyHandler {
 

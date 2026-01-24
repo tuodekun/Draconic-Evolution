@@ -1,10 +1,10 @@
 package com.brandon3055.draconicevolution.common.network;
 
-import com.brandon3055.draconicevolution.brandonscore.common.utills.DataUtills;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 
+import com.brandon3055.draconicevolution.brandonscore.common.utills.DataUtills;
 import com.brandon3055.draconicevolution.client.handler.ClientEventHandler;
 
 import cpw.mods.fml.common.network.simpleimpl.IMessage;

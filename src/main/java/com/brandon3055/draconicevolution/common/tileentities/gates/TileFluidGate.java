@@ -1,6 +1,7 @@
 package com.brandon3055.draconicevolution.common.tileentities.gates;
 
-import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
+
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.Fluid;
@@ -10,8 +11,6 @@ import net.minecraftforge.fluids.IFluidHandler;
 
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.utills.LogHelper;
-
-import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
 
 /**
  * Created by Brandon on 29/6/2015.

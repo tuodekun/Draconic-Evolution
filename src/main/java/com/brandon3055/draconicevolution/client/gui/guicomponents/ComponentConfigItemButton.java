@@ -20,7 +20,8 @@ import com.brandon3055.draconicevolution.common.utills.ItemConfigField;
  */
 public class ComponentConfigItemButton extends ComponentBase {
 
-    private static final ResourceLocation texture = new ResourceLocation(References.RESOURCESPREFIX + "textures/gui/Widgets.png");
+    private static final ResourceLocation texture = new ResourceLocation(
+            References.RESOURCESPREFIX + "textures/gui/Widgets.png");
     public int slot;
     private InventoryPlayer inventory;
     public boolean hasValidItem = false;

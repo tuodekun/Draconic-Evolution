@@ -1,8 +1,9 @@
 package com.brandon3055.draconicevolution.common.items.tools;
 
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
+
 import java.util.List;
 
-import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnumEnchantmentType;
@@ -16,6 +17,7 @@ import net.minecraftforge.client.IItemRenderer;
 
 import org.lwjgl.opengl.GL11;
 
+import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
 import com.brandon3055.draconicevolution.client.render.IRenderTweak;
 import com.brandon3055.draconicevolution.common.ModItems;
 import com.brandon3055.draconicevolution.common.handler.BalanceConfigHandler;
@@ -31,8 +33,6 @@ import com.brandon3055.draconicevolution.common.utills.ItemConfigField;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-
-import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
 
 public class DraconicDistructionStaff extends MiningTool
         implements IInventoryTool, IRenderTweak, IEnergyContainerWeaponItem {
@@ -217,7 +217,7 @@ public class DraconicDistructionStaff extends MiningTool
                 InfoHelper.ITC() + StatCollector.translateToLocal("info.de.attackDamage.txt")
                         + ": "
                         + InfoHelper.HITC()
-                        + formatNumber( ToolHandler.getBaseAttackDamage(stack)));
+                        + formatNumber(ToolHandler.getBaseAttackDamage(stack)));
         return list;
     }
 

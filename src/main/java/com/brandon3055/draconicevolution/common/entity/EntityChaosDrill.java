@@ -2,12 +2,12 @@ package com.brandon3055.draconicevolution.common.entity;
 
 import java.util.ArrayList;
 
-import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
 
+import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.common.blocks.multiblock.MultiblockHelper;
 import com.brandon3055.draconicevolution.common.utills.LogHelper;
 
