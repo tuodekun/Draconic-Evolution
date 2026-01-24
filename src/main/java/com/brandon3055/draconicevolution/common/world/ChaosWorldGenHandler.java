@@ -137,7 +137,6 @@ public class ChaosWorldGenHandler {
             for (int z = islandCenter.z - outerRadius; z <= islandCenter.z + outerRadius; z++) {
                 int dist = (int) (Utills.getDistanceAtoB(x, z, islandCenter.x, islandCenter.z));
                 for (int i = 0; i < rings; i++) {
-                    // if (dist < outerRadius1 && dist >= innerRadius1 || dist < outerRadius2 && dist >= innerRadius2)
                     if (dist < (outerRadius - ((width + spacing) * i))
                             && dist >= (outerRadius - width - ((width + spacing) * i))) {
                         int y = 90 + (int) ((double) (islandCenter.x - x) * 0.1D) + (random.nextInt(10) - 5);

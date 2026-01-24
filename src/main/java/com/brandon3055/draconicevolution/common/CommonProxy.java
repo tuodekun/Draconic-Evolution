@@ -62,7 +62,6 @@ import com.brandon3055.draconicevolution.common.network.TileObjectPacket;
 import com.brandon3055.draconicevolution.common.network.ToolModePacket;
 import com.brandon3055.draconicevolution.common.tileentities.TileCKeyStone;
 import com.brandon3055.draconicevolution.common.tileentities.TileChaosShard;
-import com.brandon3055.draconicevolution.common.tileentities.TileContainerTemplate;
 import com.brandon3055.draconicevolution.common.tileentities.TileCustomSpawner;
 import com.brandon3055.draconicevolution.common.tileentities.TileDislocatorInhibitor;
 import com.brandon3055.draconicevolution.common.tileentities.TileDissEnchanter;
@@ -77,7 +76,6 @@ import com.brandon3055.draconicevolution.common.tileentities.TilePlayerDetectorA
 import com.brandon3055.draconicevolution.common.tileentities.TilePotentiometer;
 import com.brandon3055.draconicevolution.common.tileentities.TileSunDial;
 import com.brandon3055.draconicevolution.common.tileentities.TileTeleporterStand;
-import com.brandon3055.draconicevolution.common.tileentities.TileTestBlock;
 import com.brandon3055.draconicevolution.common.tileentities.TileUpgradeModifier;
 import com.brandon3055.draconicevolution.common.tileentities.TileWeatherController;
 import com.brandon3055.draconicevolution.common.tileentities.energynet.TileEnergyRelay;
@@ -215,10 +213,6 @@ public class CommonProxy {
         GameRegistry.registerTileEntity(TileChaosShard.class, References.RESOURCESPREFIX + "TileChaosShard");
         GameRegistry.registerTileEntity(TileUpgradeModifier.class, References.RESOURCESPREFIX + "TileEnhancementModifier");
         GameRegistry.registerTileEntity(TileDislocatorInhibitor.class, References.RESOURCESPREFIX + "TileDislocatorInhibitor");
-        if (DraconicEvolution.debug) {
-            GameRegistry.registerTileEntity(TileTestBlock.class, References.RESOURCESPREFIX + "TileTestBlock");
-            GameRegistry.registerTileEntity(TileContainerTemplate.class, References.RESOURCESPREFIX + "TileContainerTemplate");
-        }
         // spotless:on
     }
 
