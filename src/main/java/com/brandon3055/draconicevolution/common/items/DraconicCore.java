@@ -10,11 +10,11 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
 import com.brandon3055.draconicevolution.DraconicEvolution;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
 import com.brandon3055.draconicevolution.common.ModBlocks;
 import com.brandon3055.draconicevolution.common.ModItems;
 import com.brandon3055.draconicevolution.common.lib.Strings;
 import com.brandon3055.draconicevolution.common.tileentities.TileCustomSpawner;
+import com.brandon3055.draconicevolution.common.utills.InfoHelper;
 import com.brandon3055.draconicevolution.common.utills.LogHelper;
 
 import cpw.mods.fml.relauncher.Side;

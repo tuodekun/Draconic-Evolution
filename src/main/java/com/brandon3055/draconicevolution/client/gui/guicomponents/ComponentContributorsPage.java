@@ -17,13 +17,13 @@ import net.minecraft.util.StringUtils;
 
 import org.lwjgl.opengl.GL11;
 
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentScrollingBase;
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.GUIScrollingBase;
-import com.brandon3055.draconicevolution.brandonscore.client.utills.ClientUtills;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
 import com.brandon3055.draconicevolution.client.handler.ResourceHandler;
+import com.brandon3055.draconicevolution.client.utils.ClientUtills;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.ComponentScrollingBase;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.GUIScrollingBase;
 import com.brandon3055.draconicevolution.common.handler.ContributorHandler;
 import com.brandon3055.draconicevolution.common.handler.ContributorHandler.Contributor;
+import com.brandon3055.draconicevolution.common.utills.InfoHelper;
 
 /**
  * Created by brandon3055 on 5/11/2015.

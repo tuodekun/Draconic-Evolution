@@ -29,8 +29,6 @@ import net.minecraft.util.StatCollector;
 import net.minecraftforge.common.util.ForgeDirection;
 
 import com.brandon3055.draconicevolution.DraconicEvolution;
-import com.brandon3055.draconicevolution.brandonscore.common.handlers.ProcessHandler;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.client.ReactorSound;
 import com.brandon3055.draconicevolution.client.gui.GuiHandler;
 import com.brandon3055.draconicevolution.client.render.particle.Particles;
@@ -42,6 +40,8 @@ import com.brandon3055.draconicevolution.common.handler.ConfigHandler;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.tileentities.TileObjectSync;
 import com.brandon3055.draconicevolution.common.utills.OreDictionaryHelper;
+import com.brandon3055.draconicevolution.common.utills.Utills;
+import com.brandon3055.draconicevolution.common.utills.handlers.ProcessHandler;
 
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;

@@ -18,11 +18,11 @@ import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
 
 import com.brandon3055.draconicevolution.DraconicEvolution;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.Teleporter;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.client.handler.ParticleHandler;
 import com.brandon3055.draconicevolution.client.render.particle.Particles;
 import com.brandon3055.draconicevolution.common.network.GenericParticlePacket;
+import com.brandon3055.draconicevolution.common.utills.Teleporter;
+import com.brandon3055.draconicevolution.common.utills.Utills;
 
 import cofh.api.energy.IEnergyContainerItem;
 import cpw.mods.fml.common.network.NetworkRegistry;

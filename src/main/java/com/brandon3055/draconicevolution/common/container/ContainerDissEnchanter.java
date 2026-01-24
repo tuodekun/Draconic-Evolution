@@ -9,9 +9,9 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 
-import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
 import com.brandon3055.draconicevolution.common.inventory.SlotOutput;
 import com.brandon3055.draconicevolution.common.tileentities.TileDissEnchanter;
+import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
 import com.brandon3055.draconicevolution.integration.ModHelper;
 
 public class ContainerDissEnchanter extends Container {

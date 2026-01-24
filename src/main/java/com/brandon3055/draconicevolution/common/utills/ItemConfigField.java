@@ -7,8 +7,6 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.util.StringUtils;
 
 import com.brandon3055.draconicevolution.DraconicEvolution;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.DataUtills;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.network.ItemConfigPacket;
 

@@ -13,18 +13,18 @@ import net.minecraft.util.StatCollector;
 
 import org.lwjgl.opengl.GL11;
 
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentButton;
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentCollection;
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentTextureButton;
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentTexturedRect;
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.GUIBase;
-import com.brandon3055.draconicevolution.brandonscore.client.utills.GuiHelper;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.client.handler.ResourceHandler;
+import com.brandon3055.draconicevolution.client.utils.GuiHelper;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.ComponentButton;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.ComponentCollection;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.ComponentTextureButton;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.ComponentTexturedRect;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.GUIBase;
 import com.brandon3055.draconicevolution.common.container.ContainerReactor;
 import com.brandon3055.draconicevolution.common.handler.ConfigHandler;
 import com.brandon3055.draconicevolution.common.tileentities.multiblocktiles.reactor.TileReactorCore;
 import com.brandon3055.draconicevolution.common.tileentities.multiblocktiles.reactor.TileReactorCore.ReactorState;
+import com.brandon3055.draconicevolution.common.utills.Utills;
 
 /**
  * Created by brandon3055 on 30/7/2015.

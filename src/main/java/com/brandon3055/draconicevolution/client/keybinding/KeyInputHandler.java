@@ -14,7 +14,6 @@ import net.minecraft.util.MovingObjectPosition;
 import org.lwjgl.input.Mouse;
 
 import com.brandon3055.draconicevolution.DraconicEvolution;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
 import com.brandon3055.draconicevolution.common.ModItems;
 import com.brandon3055.draconicevolution.common.items.tools.Magnet;
 import com.brandon3055.draconicevolution.common.items.tools.baseclasses.ToolHandler;
@@ -25,6 +24,7 @@ import com.brandon3055.draconicevolution.common.network.PlacedItemPacket;
 import com.brandon3055.draconicevolution.common.network.TeleporterPacket;
 import com.brandon3055.draconicevolution.common.utills.IConfigurableItem;
 import com.brandon3055.draconicevolution.common.utills.InventoryUtils;
+import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
 import com.brandon3055.draconicevolution.integration.ModHelper;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;

@@ -46,10 +46,6 @@ import net.minecraftforge.event.entity.player.PlayerUseItemEvent;
 import net.minecraftforge.event.world.WorldEvent;
 
 import com.brandon3055.draconicevolution.DraconicEvolution;
-import com.brandon3055.draconicevolution.brandonscore.common.handlers.ProcessHandler;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.DataUtills;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.common.ModBlocks;
 import com.brandon3055.draconicevolution.common.ModItems;
 import com.brandon3055.draconicevolution.common.achievements.Achievements;
@@ -60,7 +56,11 @@ import com.brandon3055.draconicevolution.common.items.armor.CustomArmorHandler;
 import com.brandon3055.draconicevolution.common.network.MountUpdatePacket;
 import com.brandon3055.draconicevolution.common.network.SpeedRequestPacket;
 import com.brandon3055.draconicevolution.common.tileentities.TileGrinder;
+import com.brandon3055.draconicevolution.common.utills.DataUtills;
+import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
 import com.brandon3055.draconicevolution.common.utills.LogHelper;
+import com.brandon3055.draconicevolution.common.utills.Utills;
+import com.brandon3055.draconicevolution.common.utills.handlers.ProcessHandler;
 import com.brandon3055.draconicevolution.common.world.ChaosWorldGenHandler;
 
 import cpw.mods.fml.common.eventhandler.EventPriority;

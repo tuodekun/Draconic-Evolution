@@ -4,7 +4,6 @@ import net.minecraft.inventory.Container;
 import net.minecraft.item.ItemStack;
 
 import com.brandon3055.draconicevolution.DraconicEvolution;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
 import com.brandon3055.draconicevolution.client.gui.GuiHandler;
 import com.brandon3055.draconicevolution.common.container.ContainerDissEnchanter;
 import com.brandon3055.draconicevolution.common.container.ContainerDraconiumChest;
@@ -13,6 +12,7 @@ import com.brandon3055.draconicevolution.common.tileentities.TileDissEnchanter;
 import com.brandon3055.draconicevolution.common.tileentities.TileDraconiumChest;
 import com.brandon3055.draconicevolution.common.tileentities.TileWeatherController;
 import com.brandon3055.draconicevolution.common.utills.IConfigurableItem;
+import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
 
 import cpw.mods.fml.common.network.simpleimpl.IMessage;
 import cpw.mods.fml.common.network.simpleimpl.IMessageHandler;

@@ -24,16 +24,16 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.PlayerPickupXpEvent;
 
 import com.brandon3055.draconicevolution.DraconicEvolution;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
 import com.brandon3055.draconicevolution.common.ModItems;
 import com.brandon3055.draconicevolution.common.handler.ConfigHandler;
 import com.brandon3055.draconicevolution.common.items.ItemDE;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.tileentities.TileDislocatorInhibitor;
 import com.brandon3055.draconicevolution.common.utills.IConfigurableItem;
+import com.brandon3055.draconicevolution.common.utills.InfoHelper;
 import com.brandon3055.draconicevolution.common.utills.InventoryUtils;
 import com.brandon3055.draconicevolution.common.utills.ItemConfigField;
+import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
 import com.brandon3055.draconicevolution.integration.ModHelper;
 import com.gtnewhorizon.gtnhlib.GTNHLib;
 

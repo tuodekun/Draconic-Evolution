@@ -17,7 +17,6 @@ import net.minecraftforge.client.IItemRenderer;
 
 import org.lwjgl.opengl.GL11;
 
-import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
 import com.brandon3055.draconicevolution.client.render.IRenderTweak;
 import com.brandon3055.draconicevolution.common.ModItems;
 import com.brandon3055.draconicevolution.common.handler.BalanceConfigHandler;
@@ -29,6 +28,7 @@ import com.brandon3055.draconicevolution.common.lib.Strings;
 import com.brandon3055.draconicevolution.common.utills.IConfigurableItem;
 import com.brandon3055.draconicevolution.common.utills.IInventoryTool;
 import com.brandon3055.draconicevolution.common.utills.IUpgradableItem;
+import com.brandon3055.draconicevolution.common.utills.InfoHelper;
 import com.brandon3055.draconicevolution.common.utills.ItemConfigField;
 
 import cpw.mods.fml.relauncher.Side;

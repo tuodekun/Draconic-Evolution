@@ -6,8 +6,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 
-import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
-
 /**
  * Created by Brandon on 29/12/2014.
  */
@@ -46,10 +44,6 @@ public interface IConfigurableItem {
 
         public static void setFloat(ItemStack stack, String tag, float f) {
             getProfileCompound(stack).setFloat(tag, f);
-        }
-
-        public static void setDouble(ItemStack stack, String tag, double d) {
-            getProfileCompound(stack).setDouble(tag, d);
         }
 
         public static void setString(ItemStack stack, String tag, String s) {

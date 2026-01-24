@@ -2,9 +2,9 @@ package com.brandon3055.draconicevolution.common.network;
 
 import net.minecraft.client.Minecraft;
 
-import com.brandon3055.draconicevolution.brandonscore.common.utills.DataUtills;
 import com.brandon3055.draconicevolution.common.container.ContainerDataSync;
 import com.brandon3055.draconicevolution.common.tileentities.TileObjectSync;
+import com.brandon3055.draconicevolution.common.utills.DataUtills;
 
 import cpw.mods.fml.common.network.simpleimpl.IMessage;
 import cpw.mods.fml.common.network.simpleimpl.IMessageHandler;

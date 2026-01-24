@@ -10,10 +10,10 @@ import net.minecraft.world.World;
 
 import org.lwjgl.opengl.GL11;
 
-import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.client.handler.ClientEventHandler;
 import com.brandon3055.draconicevolution.client.handler.ResourceHandler;
 import com.brandon3055.draconicevolution.common.lib.References;
+import com.brandon3055.draconicevolution.common.utills.Utills;
 
 /**
  * Created by Brandon on 8/02/2015.

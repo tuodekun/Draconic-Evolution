@@ -15,7 +15,6 @@ import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.StatCollector;
 import net.minecraftforge.common.util.ForgeDirection;
 
-import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
 import com.brandon3055.draconicevolution.common.ModBlocks;
 import com.brandon3055.draconicevolution.common.blocks.multiblock.InvisibleMultiblock;
 import com.brandon3055.draconicevolution.common.blocks.multiblock.MultiblockHelper.TileLocation;
@@ -23,6 +22,7 @@ import com.brandon3055.draconicevolution.common.handler.BalanceConfigHandler;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.tileentities.TileObjectSync;
 import com.brandon3055.draconicevolution.common.tileentities.TileParticleGenerator;
+import com.brandon3055.draconicevolution.common.utills.InfoHelper;
 import com.brandon3055.draconicevolution.common.utills.LogHelper;
 
 import cpw.mods.fml.common.network.NetworkRegistry;

@@ -16,7 +16,7 @@ import net.minecraft.util.StatCollector;
 
 import org.lwjgl.opengl.GL11;
 
-import com.brandon3055.draconicevolution.brandonscore.client.utills.GuiHelper;
+import com.brandon3055.draconicevolution.client.utils.GuiHelper;
 import com.brandon3055.draconicevolution.common.container.ContainerEnergyInfuser;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.tileentities.TileEnergyInfuser;

@@ -21,14 +21,14 @@ import net.minecraftforge.oredict.ShapelessOreRecipe;
 import org.apache.commons.io.FilenameUtils;
 import org.lwjgl.opengl.GL11;
 
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentScrollingBase;
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.GUIScrollingBase;
-import com.brandon3055.draconicevolution.brandonscore.client.utills.GuiHelper;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.client.gui.componentguis.ManualPage;
 import com.brandon3055.draconicevolution.client.handler.ResourceHandler;
-import com.brandon3055.draconicevolution.client.utill.CustomResourceLocation;
+import com.brandon3055.draconicevolution.client.utils.CustomResourceLocation;
+import com.brandon3055.draconicevolution.client.utils.GuiHelper;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.ComponentScrollingBase;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.GUIScrollingBase;
+import com.brandon3055.draconicevolution.common.utills.InfoHelper;
+import com.brandon3055.draconicevolution.common.utills.Utills;
 
 /**
  * Created by Brandon on 19/03/2015.

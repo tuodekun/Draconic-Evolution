@@ -14,18 +14,17 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.util.StringUtils;
 
 import com.brandon3055.draconicevolution.DraconicEvolution;
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentBase;
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentButton;
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentCollection;
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentItemRenderer;
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentTextField;
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentTexturedRect;
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.GUIBase;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
 import com.brandon3055.draconicevolution.client.gui.GuiHudConfig;
 import com.brandon3055.draconicevolution.client.gui.guicomponents.ComponentConfigItemButton;
 import com.brandon3055.draconicevolution.client.gui.guicomponents.ComponentFieldAdjuster;
 import com.brandon3055.draconicevolution.client.gui.guicomponents.ComponentFieldButton;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.ComponentBase;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.ComponentButton;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.ComponentCollection;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.ComponentItemRenderer;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.ComponentTextField;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.ComponentTexturedRect;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.GUIBase;
 import com.brandon3055.draconicevolution.common.container.ContainerAdvTool;
 import com.brandon3055.draconicevolution.common.handler.ContributorHandler;
 import com.brandon3055.draconicevolution.common.items.weapons.BowHandler;
@@ -35,6 +34,7 @@ import com.brandon3055.draconicevolution.common.network.ItemConfigPacket;
 import com.brandon3055.draconicevolution.common.utills.IConfigurableItem;
 import com.brandon3055.draconicevolution.common.utills.IInventoryTool;
 import com.brandon3055.draconicevolution.common.utills.ItemConfigField;
+import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
 
 /**
  * Created by Brandon on 26/12/2014.

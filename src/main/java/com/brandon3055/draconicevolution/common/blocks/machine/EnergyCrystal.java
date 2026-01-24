@@ -21,7 +21,6 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
 import com.brandon3055.draconicevolution.DraconicEvolution;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
 import com.brandon3055.draconicevolution.common.ModBlocks;
 import com.brandon3055.draconicevolution.common.blocks.BlockDE;
 import com.brandon3055.draconicevolution.common.blocks.itemblocks.EnergyCrystalItemBlock;
@@ -34,6 +33,7 @@ import com.brandon3055.draconicevolution.common.tileentities.energynet.TileEnerg
 import com.brandon3055.draconicevolution.common.tileentities.energynet.TileRemoteEnergyBase;
 import com.brandon3055.draconicevolution.common.tileentities.energynet.TileWirelessEnergyTransceiver;
 import com.brandon3055.draconicevolution.common.utills.IHudDisplayBlock;
+import com.brandon3055.draconicevolution.common.utills.InfoHelper;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

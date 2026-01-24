@@ -28,8 +28,9 @@ public class DraconicEvolution {
 
     @Mod.Instance(References.MODID)
     public static DraconicEvolution instance;
-
-    @SidedProxy(clientSide = References.CLIENTPROXYLOCATION, serverSide = References.SERVERPROXYLOCATION)
+    @SidedProxy(
+            clientSide = "com.brandon3055.draconicevolution.client.ClientProxy",
+            serverSide = "com.brandon3055.draconicevolution.common.CommonProxy")
     public static CommonProxy proxy;
 
     public static CreativeTabs tabToolsWeapons = new DETab(

@@ -10,8 +10,6 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.oredict.OreDictionary;
 
 import com.brandon3055.draconicevolution.DraconicEvolution;
-import com.brandon3055.draconicevolution.brandonscore.common.handlers.FileHandler;
-import com.brandon3055.draconicevolution.brandonscore.common.handlers.ProcessHandler;
 import com.brandon3055.draconicevolution.client.creativetab.DETab;
 import com.brandon3055.draconicevolution.client.gui.GuiHandler;
 import com.brandon3055.draconicevolution.client.render.particle.ParticleEnergyBeam;
@@ -95,6 +93,8 @@ import com.brandon3055.draconicevolution.common.tileentities.multiblocktiles.rea
 import com.brandon3055.draconicevolution.common.tileentities.multiblocktiles.reactor.TileReactorStabilizer;
 import com.brandon3055.draconicevolution.common.utills.DragonChunkLoader;
 import com.brandon3055.draconicevolution.common.utills.LogHelper;
+import com.brandon3055.draconicevolution.common.utills.handlers.FileHandler;
+import com.brandon3055.draconicevolution.common.utills.handlers.ProcessHandler;
 import com.brandon3055.draconicevolution.common.world.DraconicWorldGenerator;
 import com.brandon3055.draconicevolution.integration.computers.CCOCIntegration;
 

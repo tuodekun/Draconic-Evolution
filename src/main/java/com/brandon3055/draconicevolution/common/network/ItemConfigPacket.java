@@ -5,11 +5,11 @@ import java.util.List;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 
-import com.brandon3055.draconicevolution.brandonscore.common.lib.References;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.DataUtills;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
+import com.brandon3055.draconicevolution.common.utills.DataUtills;
 import com.brandon3055.draconicevolution.common.utills.IConfigurableItem;
 import com.brandon3055.draconicevolution.common.utills.ItemConfigField;
+import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
+import com.brandon3055.draconicevolution.common.utills.lib.References;
 
 import cpw.mods.fml.common.network.ByteBufUtils;
 import cpw.mods.fml.common.network.simpleimpl.IMessage;

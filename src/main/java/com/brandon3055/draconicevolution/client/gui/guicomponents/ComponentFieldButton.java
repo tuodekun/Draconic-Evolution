@@ -9,10 +9,10 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentBase;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.DataUtills;
 import com.brandon3055.draconicevolution.client.gui.componentguis.GUIToolConfig;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.ComponentBase;
 import com.brandon3055.draconicevolution.common.lib.References;
+import com.brandon3055.draconicevolution.common.utills.DataUtills;
 import com.brandon3055.draconicevolution.common.utills.IConfigurableItem;
 import com.brandon3055.draconicevolution.common.utills.ItemConfigField;
 

@@ -12,8 +12,8 @@ import net.minecraft.util.StatCollector;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 
-import com.brandon3055.draconicevolution.brandonscore.client.utills.GuiHelper;
 import com.brandon3055.draconicevolution.client.handler.ResourceHandler;
+import com.brandon3055.draconicevolution.client.utils.GuiHelper;
 import com.brandon3055.draconicevolution.common.tileentities.gates.TileGate;
 
 /**

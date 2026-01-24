@@ -11,11 +11,11 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraftforge.common.util.ForgeDirection;
 
-import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.client.render.particle.ParticleEnergyBeam;
 import com.brandon3055.draconicevolution.client.render.particle.ParticleEnergyField;
 import com.brandon3055.draconicevolution.common.utills.EnergyStorage;
 import com.brandon3055.draconicevolution.common.utills.LogHelper;
+import com.brandon3055.draconicevolution.common.utills.Utills;
 
 import cofh.api.energy.IEnergyHandler;
 import cofh.api.energy.IEnergyReceiver;

@@ -26,7 +26,7 @@ import net.minecraft.util.ResourceLocation;
 import org.apache.commons.io.FilenameUtils;
 
 import com.brandon3055.draconicevolution.client.gui.componentguis.GUIManual;
-import com.brandon3055.draconicevolution.client.utill.CustomResourceLocation;
+import com.brandon3055.draconicevolution.client.utils.CustomResourceLocation;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.utills.LogHelper;
 import com.google.common.io.ByteStreams;

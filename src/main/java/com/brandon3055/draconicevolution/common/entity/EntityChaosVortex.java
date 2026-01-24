@@ -8,9 +8,9 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
 
 import com.brandon3055.draconicevolution.DraconicEvolution;
-import com.brandon3055.draconicevolution.brandonscore.common.handlers.ProcessHandler;
 import com.brandon3055.draconicevolution.client.render.particle.Particles;
 import com.brandon3055.draconicevolution.common.network.GenericParticlePacket;
+import com.brandon3055.draconicevolution.common.utills.handlers.ProcessHandler;
 
 import cpw.mods.fml.common.network.NetworkRegistry;
 

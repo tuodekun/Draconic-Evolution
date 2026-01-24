@@ -25,8 +25,6 @@ import net.minecraftforge.event.entity.player.UseHoeEvent;
 import org.lwjgl.opengl.GL11;
 
 import com.brandon3055.draconicevolution.DraconicEvolution;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.InfoHelper;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
 import com.brandon3055.draconicevolution.client.render.IRenderTweak;
 import com.brandon3055.draconicevolution.common.ModItems;
 import com.brandon3055.draconicevolution.common.entity.EntityPersistentItem;
@@ -37,7 +35,9 @@ import com.brandon3055.draconicevolution.common.lib.Strings;
 import com.brandon3055.draconicevolution.common.utills.IConfigurableItem;
 import com.brandon3055.draconicevolution.common.utills.IHudDisplayItem;
 import com.brandon3055.draconicevolution.common.utills.IUpgradableItem;
+import com.brandon3055.draconicevolution.common.utills.InfoHelper;
 import com.brandon3055.draconicevolution.common.utills.ItemConfigField;
+import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
 import com.brandon3055.draconicevolution.common.utills.LogHelper;
 
 import cofh.api.energy.IEnergyContainerItem;

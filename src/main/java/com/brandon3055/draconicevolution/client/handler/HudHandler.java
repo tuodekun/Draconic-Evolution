@@ -16,8 +16,8 @@ import net.minecraftforge.client.event.RenderGameOverlayEvent;
 
 import org.lwjgl.opengl.GL11;
 
-import com.brandon3055.draconicevolution.brandonscore.client.utills.GuiHelper;
 import com.brandon3055.draconicevolution.client.gui.GuiHudConfig;
+import com.brandon3055.draconicevolution.client.utils.GuiHelper;
 import com.brandon3055.draconicevolution.common.handler.ConfigHandler;
 import com.brandon3055.draconicevolution.common.items.armor.CustomArmorHandler;
 import com.brandon3055.draconicevolution.common.utills.IHudDisplayBlock;

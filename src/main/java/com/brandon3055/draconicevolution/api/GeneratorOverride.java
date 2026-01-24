@@ -4,7 +4,7 @@ import java.util.Random;
 
 import net.minecraft.world.World;
 
-import com.brandon3055.draconicevolution.brandonscore.common.utills.DataUtills;
+import com.brandon3055.draconicevolution.common.utills.DataUtills;
 import com.brandon3055.draconicevolution.common.world.ChaosWorldGenHandler;
 import com.brandon3055.draconicevolution.common.world.DraconicWorldGenerator;
 import com.brandon3055.draconicevolution.common.world.WorldGenEnderComet;

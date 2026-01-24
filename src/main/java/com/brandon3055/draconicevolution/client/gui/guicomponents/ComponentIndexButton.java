@@ -6,11 +6,11 @@ import net.minecraft.item.ItemStack;
 
 import org.lwjgl.opengl.GL11;
 
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.ComponentScrollingBase;
-import com.brandon3055.draconicevolution.brandonscore.client.gui.guicomponents.GUIScrollingBase;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.client.gui.componentguis.ManualPage;
 import com.brandon3055.draconicevolution.client.handler.ResourceHandler;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.ComponentScrollingBase;
+import com.brandon3055.draconicevolution.client.utils.guicomponents.GUIScrollingBase;
+import com.brandon3055.draconicevolution.common.utills.Utills;
 
 /**
  * Created by Brandon on 7/03/2015.

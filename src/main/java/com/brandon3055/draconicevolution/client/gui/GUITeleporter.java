@@ -21,13 +21,13 @@ import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
 
 import com.brandon3055.draconicevolution.DraconicEvolution;
-import com.brandon3055.draconicevolution.brandonscore.client.utills.GuiHelper;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.ItemNBTHelper;
-import com.brandon3055.draconicevolution.brandonscore.common.utills.Teleporter;
+import com.brandon3055.draconicevolution.client.utils.GuiHelper;
 import com.brandon3055.draconicevolution.common.ModItems;
 import com.brandon3055.draconicevolution.common.handler.ConfigHandler;
 import com.brandon3055.draconicevolution.common.lib.References;
 import com.brandon3055.draconicevolution.common.network.TeleporterPacket;
+import com.brandon3055.draconicevolution.common.utills.ItemNBTHelper;
+import com.brandon3055.draconicevolution.common.utills.Teleporter;
 
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.relauncher.Side;
