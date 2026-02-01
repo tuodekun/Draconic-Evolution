@@ -1,5 +1,7 @@
 package com.brandon3055.draconicevolution.common.items.tools;
 
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +26,6 @@ import org.lwjgl.opengl.GL11;
 
 import com.brandon3055.brandonscore.common.utills.InfoHelper;
 import com.brandon3055.brandonscore.common.utills.ItemNBTHelper;
-import com.brandon3055.brandonscore.common.utills.Utills;
 import com.brandon3055.draconicevolution.DraconicEvolution;
 import com.brandon3055.draconicevolution.client.render.IRenderTweak;
 import com.brandon3055.draconicevolution.common.ModItems;
@@ -358,7 +359,7 @@ public class DraconicHoe extends ItemHoe
                 InfoHelper.ITC() + StatCollector.translateToLocal("gui.de.RFCapacity.txt")
                         + ": "
                         + InfoHelper.HITC()
-                        + Utills.formatNumber(getMaxEnergyStored(itemstack)));
+                        + formatNumber(getMaxEnergyStored(itemstack)));
         strings.add(
                 InfoHelper.ITC() + StatCollector.translateToLocal("gui.de.max.txt")
                         + " "
@@ -388,9 +389,9 @@ public class DraconicHoe extends ItemHoe
                 InfoHelper.ITC() + StatCollector.translateToLocal("info.de.charge.txt")
                         + ": "
                         + InfoHelper.HITC()
-                        + Utills.formatNumber(getEnergyStored(stack))
+                        + formatNumber(getEnergyStored(stack))
                         + " / "
-                        + Utills.formatNumber(capacity));
+                        + formatNumber(capacity));
 
         return list;
     }

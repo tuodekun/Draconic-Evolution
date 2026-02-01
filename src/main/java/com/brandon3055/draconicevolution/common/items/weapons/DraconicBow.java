@@ -1,5 +1,7 @@
 package com.brandon3055.draconicevolution.common.items.weapons;
 
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -298,7 +300,7 @@ public class DraconicBow extends ItemBow
                 InfoHelper.ITC() + StatCollector.translateToLocal("gui.de.RFCapacity.txt")
                         + ": "
                         + InfoHelper.HITC()
-                        + Utills.formatNumber(getMaxEnergyStored(stack)));
+                        + formatNumber(getMaxEnergyStored(stack)));
         list.add(
                 InfoHelper.ITC() + StatCollector.translateToLocal("gui.de.max.txt")
                         + " "
@@ -395,9 +397,9 @@ public class DraconicBow extends ItemBow
                     InfoHelper.ITC() + StatCollector.translateToLocal("info.de.charge.txt")
                             + ": "
                             + InfoHelper.HITC()
-                            + Utills.formatNumber(getEnergyStored(stack))
+                            + formatNumber(getEnergyStored(stack))
                             + " / "
-                            + Utills.formatNumber(getMaxEnergyStored(stack)));
+                            + formatNumber(getMaxEnergyStored(stack)));
 
             if (BrandonsCore.proxy.getClientPlayer() != null) {
                 BowHandler.BowProperties properties = new BowHandler.BowProperties(

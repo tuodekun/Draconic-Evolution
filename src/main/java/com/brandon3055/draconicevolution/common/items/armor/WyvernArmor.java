@@ -1,5 +1,7 @@
 package com.brandon3055.draconicevolution.common.items.armor;
 
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -395,7 +397,7 @@ public class WyvernArmor extends ItemArmor implements ISpecialArmor, IConfigurab
                 InfoHelper.ITC() + StatCollector.translateToLocal("gui.de.RFCapacity.txt")
                         + ": "
                         + InfoHelper.HITC()
-                        + Utills.formatNumber(getMaxEnergyStored(stack)));
+                        + formatNumber(getMaxEnergyStored(stack)));
         strings.add(
                 InfoHelper.ITC() + StatCollector.translateToLocal("gui.de.ShieldCapacity.txt")
                         + ": "

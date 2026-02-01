@@ -1,5 +1,7 @@
 package com.brandon3055.draconicevolution.common.tileentities.multiblocktiles;
 
+import static com.gtnewhorizon.gtnhlib.util.numberformatting.NumberFormatUtil.formatNumber;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -500,9 +502,9 @@ public class TileEnergyStorageCore extends TileObjectSync {
         information.add(
                 StatCollector.translateToLocal("info.de.charge.txt") + ": "
                         + InfoHelper.ITC()
-                        + Utills.formatNumber(energy)
+                        + formatNumber(energy)
                         + " / "
-                        + Utills.formatNumber(capacity)
+                        + formatNumber(capacity)
                         + " ["
                         + Utills.addCommas(energy)
                         + " RF]");
